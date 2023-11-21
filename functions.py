@@ -1,7 +1,7 @@
 import json
 import polars as pl
 import pandas as pd
-from connDb import path_db
+from connDb import path_db, engine
 import configparser
 config = configparser.ConfigParser()
 config.read('config/config.init')
@@ -43,11 +43,11 @@ def stringCleanExtraSpaces(df:pl.LazyFrame) -> pl.LazyFrame:
     return df
 
 
-def stringUpperCase(df:pl.LazyFrame) -> pl.LazyFrame:
+def stringLowerCase(df:pl.LazyFrame) -> pl.LazyFrame:
 
     df = df.with_columns([
                 pl.col(pl.Utf8)
-                .str.to_uppercase()
+                .str.to_lowercase()
                 .name.keep()
              ])
     return df
@@ -62,7 +62,7 @@ def transformDespesas(df:pd.DataFrame, dfcolumns:list = None) -> pl.LazyFrame:
         
         df = stringCleanExtraSpaces(df)
 
-        df = stringUpperCase(df)
+        df = stringLowerCase(df)
         
         return df
 
@@ -73,58 +73,22 @@ def transformDespesas(df:pd.DataFrame, dfcolumns:list = None) -> pl.LazyFrame:
         
         df = stringCleanExtraSpaces(df)
 
-        df = stringUpperCase(df)
+        df = stringLowerCase(df)
 
         return df
     
-def pandasTransformDeputados(dfDept:pd.DataFrame) -> pl.LazyFrame:
 
-    dfDept["ultimoStatus"] = dfDept["ultimoStatus"].apply(lambda x: {} if pd.isnull(x) else x)
-
-    dfNormalize = pd.json_normalize(dfDept["ultimoStatus"])
-
-    dfDropColumns = dfNormalize.drop(
-                        columns = [
-                            "id", "uri", "nome", "data", "nomeEleitoral", "descricaoStatus", 
-                            "gabinete.nome", "gabinete.predio", "gabinete.sala", "gabinete.andar", "gabinete.email"
-                        ])
+def loadStgDeputados(df:pd.DataFrame) -> None: 
+    for column in df.columns:
+        if column == 'ultimoStatus':
+            df[column] = df[column].apply(json.dumps)
+        
+        else:
+            df[column] = df[column].astype(str)
     
-    dfRedeSocial = pd.DataFrame(
-                        dfDept['redeSocial'].tolist(), 
-                        columns=[f'RedeSocial{i+1}'for i in range (dfDept['redeSocial'].apply(len).max())])
-    
-    df = pl.LazyFrame(pd.concat([dfDept, dfDropColumns, dfRedeSocial], axis=1)
-                      .drop(["ultimoStatus", "redeSocial"], axis=1))
-    
-    print("Etapa de transformação de <Deputados> via Pandas concluída!\n")
-    return df
-
-
-def polarsTransformDeputados(df:pl.LazyFrame) -> pl.LazyFrame:
-
-    df = stringCleanExtraSpaces(df)
-
-    df = stringUpperCase(df)
-
-    df = stringVaziaToNull(df)
-
-    print("Etapa de transformação de <Deputados> via Polars concluída!\n")
-
-    return df
-
-
-def loadDeputados(df:pl.LazyFrame) -> None:
-    df.collect().write_database("deputados", path_db, if_exists="append", engine="adbc")
-    print("Dados de <Deputados> carregados em deputados com sucesso!")
-
-
-def loadStgDeputados(df:pd.DataFrame) -> None:
-    columns= df.columns
-    for column in columns:
-        df[column] = df[column].apply(json.dumps)
-    
-    df.to_sql("stg_deputados", path_db, if_exists="replace", index=False)
+    df.to_sql("stg_deputados", con=engine, if_exists="replace", index=False)
     print("Dados de <Deputados> carregados em stg_deputados com sucesso!")
+
 
 
 def loadDespesas(df:pl.LazyFrame) -> None:

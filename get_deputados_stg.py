@@ -4,7 +4,7 @@ from functions import loadStgDeputados
 from requests.exceptions import RequestException
 import configparser
 config = configparser.ConfigParser()
-config.read('config/config.init')
+config.read('DespesasDeputadosFederais/config.init')
 
 """
    Este código de extração pode ser executado apenas uma vez..
