@@ -1,10 +1,7 @@
 import json
 import polars as pl
 import pandas as pd
-from connDb import path_db, engine
-import configparser
-config = configparser.ConfigParser()
-config.read('config/config.init')
+from connDb import path_db
 
 
 def dropColumns(df:pl.LazyFrame, dfColumns:list = None) -> pl.LazyFrame:
@@ -86,7 +83,7 @@ def loadStgDeputados(df:pd.DataFrame) -> None:
         else:
             df[column] = df[column].astype(str)
     
-    df.to_sql("stg_deputados", con=engine, if_exists="replace", index=False)
+    df.to_sql("stg_deputados", path_db, if_exists="replace", index=False)
     print("Dados de <Deputados> carregados em stg_deputados com sucesso!")
 
 

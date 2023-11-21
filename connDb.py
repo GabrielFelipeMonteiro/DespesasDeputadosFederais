@@ -3,6 +3,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('DespesasDeputadosFederais/config.init')
+print(config.sections())
 
 
 """ Configurações de conexão do banco de dados PostgreSQL """
@@ -15,6 +16,4 @@ port = config['postgresql']['port']
 
 path_db = f'postgresql://{user}:{passwd}@{host}:{port}/{db}'
 
-path_db_engine = f'postgresql://{user}:{passwd}@{host}:{port}/{db}?charset=utf8'
-
-engine = create_engine(path_db)
+print(host, user, passwd, db, port)
