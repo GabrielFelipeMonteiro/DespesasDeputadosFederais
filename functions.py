@@ -204,22 +204,25 @@ def transformDespesas(ldf:pl.LazyFrame) -> pl.LazyFrame:
     ldf = stringCleanExtraSpaces(ldf)
     ldf = stringLowerCase(ldf)
     
-    ldf = pl.select(
-              pl.col('ano').cast(pl.Int64),
-              pl.col('mes').cast(pl.Int64),
-              pl.col('tipoDespesa').cast(pl.Utf8),
-              pl.col('codDocumento').cast(pl.Int64),
-              pl.col('tipoDocumento').cast(pl.Utf8),
-              pl.col('dataDocument').cast(pl.Datetime),
-              pl.col('numDocumento').cast(pl.Int64),
-              pl.col('valorDocumento').cast(pl.Float64),
-              pl.col('urlDocumento').cast(pl.Utf8),
-              pl.col('nomeFornecedor').cast(pl.Utf8),
-              pl.col('cnpjCpfFornecedor').cast(pl.Int64),
-              pl.col('valorLiquido').cast(pl.Float64),
-              pl.col('codLote').cast(pl.Int64),
-              pl.col('idDeputado').cast(pl.Int64)
+    ldf = (
+            ldf.with_columns(
+                pl.col('ano').cast(pl.Float64).cast(pl.Int64),
+                pl.col('mes').cast(pl.Float64).cast(pl.Int64),
+                pl.col('tipoDespesa').cast(pl.Utf8),
+                pl.col('codDocumento').cast(pl.Float64).cast(pl.Int64),
+                pl.col('tipoDocumento').cast(pl.Utf8),
+                pl.col('dataDocumento').cast(pl.Utf8),
+                pl.col('numDocumento').cast(pl.Utf8),
+                pl.col('valorDocumento').cast(pl.Float64),
+                pl.col('urlDocumento').cast(pl.Utf8),
+                pl.col('nomeFornecedor').cast(pl.Utf8),
+                pl.col('cnpjCpfFornecedor').cast(pl.Int64),
+                pl.col('valorLiquido').cast(pl.Float64),
+                pl.col('codLote').cast(pl.Float64).cast(pl.Int64),
+                pl.col('idDeputado').cast(pl.Int64)
+            )
     )
+
     return ldf.collect() 
 
 
