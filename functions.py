@@ -179,7 +179,7 @@ def loadDespesasStg(df:pd.DataFrame) -> None:
     for column in df.columns:
         df[column] = df[column].astype(str)
 
-    df.to_sql("stg_despesas", path_db, if_exists="replace", index=False)
+    df.to_sql("stg_despesas", path_db, if_exists="append", index=False)
     print("Dados de <Despesas> carregados em stg_despesas com sucesso!")
 
 

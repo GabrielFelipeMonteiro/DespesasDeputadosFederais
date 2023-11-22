@@ -72,7 +72,8 @@ def getDespesasDeputado(id_deputado:int, mes:int ,ano:int) -> pd.DataFrame:
         return dfDespesas
 
 
-def getAllDespesas(ids_unicos: list, mes:int, ano:int) -> pl.LazyFrame:
+def getAllDespesas(ids_unicos:list, mes:list, ano:int) -> pl.LazyFrame:
+    for mes in mes:    
         dfDespesasDeputados = pd.DataFrame()
         
         for id_deputado in ids_unicos:
@@ -93,9 +94,11 @@ def getAllDespesas(ids_unicos: list, mes:int, ano:int) -> pl.LazyFrame:
 def main():
     data = datetime.now()
 
+    meses = [2,3,4,5,6,7,8,9]
+
     ids = pl.read_database_uri('SELECT "id" from deputados', path_db).to_series().to_list()
 
-    df_despesas = getAllDespesas(ids, data.month, data.year)
+    df_despesas = getAllDespesas(ids, meses, data.year)
 
 
 if __name__ == "__main__":
