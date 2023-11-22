@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-from functions import loadStgDeputados
+from functions import loadDeputadosStg
 from requests.exceptions import RequestException
 import configparser
 config = configparser.ConfigParser()
@@ -76,7 +76,7 @@ def main():
         if df_deputado is not None:
             dfDept = pd.concat([dfDept, df_deputado], ignore_index=True)
     
-    loadStgDeputados(dfDept)
+    loadDeputadosStg(dfDept)
 
 if __name__ == "__main__":
     main()

@@ -75,7 +75,7 @@ def transformDespesas(df:pd.DataFrame, dfcolumns:list = None) -> pl.LazyFrame:
         return df
     
 
-def loadStgDeputados(df:pd.DataFrame) -> None: 
+def loadDeputadosStg(df:pd.DataFrame) -> None: 
     for column in df.columns:
         if column == 'ultimoStatus':
             df[column] = df[column].apply(json.dumps)
@@ -93,7 +93,10 @@ def loadDespesas(df:pl.LazyFrame) -> None:
     print("Dados de <Despesas> carregados em despesas com sucesso!")
 
 
-def loadStgDespesas(df:pd.DataFrame) -> None:
+def loadDespesasStg(df:pd.DataFrame) -> None:
+    for column in df.columns:
+        df[column] = df[column].astype(str)
+
     df.to_sql("stg_despesas", path_db, if_exists="replace", index=False)
     print("Dados de <Despesas> carregados em stg_despesas com sucesso!")
 
