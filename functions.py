@@ -179,7 +179,7 @@ def loadDespesasStg(df:pd.DataFrame) -> None:
     for column in df.columns:
         df[column] = df[column].astype(str)
 
-    df.to_sql("stg_despesas", path_db, if_exists="append", index=False)
+    df.to_sql("stg_despesas", path_db, if_exists="replace", index=False)
     print("Dados de <Despesas> carregados em stg_despesas com sucesso!")
 
 
@@ -206,17 +206,17 @@ def transformDespesas(ldf:pl.LazyFrame) -> pl.LazyFrame:
     
     ldf = (
             ldf.with_columns(
-                pl.col('ano').cast(pl.Float64).cast(pl.Int64),
+                pl.col('ano').cast(pl.Utf8),
                 pl.col('mes').cast(pl.Float64).cast(pl.Int64),
                 pl.col('tipoDespesa').cast(pl.Utf8),
                 pl.col('codDocumento').cast(pl.Float64).cast(pl.Int64),
                 pl.col('tipoDocumento').cast(pl.Utf8),
-                pl.col('dataDocumento').cast(pl.Utf8),
+                pl.coalesce(pl.col('dataDocumento').str.strptime(pl.Date, "%F", strict=False)),
                 pl.col('numDocumento').cast(pl.Utf8),
                 pl.col('valorDocumento').cast(pl.Float64),
                 pl.col('urlDocumento').cast(pl.Utf8),
                 pl.col('nomeFornecedor').cast(pl.Utf8),
-                pl.col('cnpjCpfFornecedor').cast(pl.Int64),
+                pl.col('cnpjCpfFornecedor').cast(pl.Utf8),
                 pl.col('valorLiquido').cast(pl.Float64),
                 pl.col('codLote').cast(pl.Float64).cast(pl.Int64),
                 pl.col('idDeputado').cast(pl.Int64)
@@ -227,5 +227,5 @@ def transformDespesas(ldf:pl.LazyFrame) -> pl.LazyFrame:
 
 
 def loadDespesasFinal(df:pl.DataFrame) -> None:
-    df.write_database("despesas", path_db, if_exists="append", engine="sqlalchemy")
+    df.write_database("despesas", path_db, if_exists="append", engine="adbc")
     print("Dados de <Despesas> carregados em despesas com sucesso!")
