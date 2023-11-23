@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-from functions import loadDeputadosStg
+from etl import loadDeputadosStg
 from requests.exceptions import RequestException
 import configparser
 config = configparser.ConfigParser()

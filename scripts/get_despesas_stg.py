@@ -3,7 +3,7 @@ import pandas as pd
 import polars as pl
 from datetime import datetime
 import time
-from functions import loadDespesasStg
+from etl import loadDespesasStg
 from connDb import path_db
 import configparser
 config = configparser.ConfigParser()
@@ -90,7 +90,7 @@ def getAllDespesas(ids_unicos:list, mes:int, ano:int) -> pl.LazyFrame:
         loadDespesasStg(dfDespesasDeputados)
     
 
-def main():
+def extractDespesas():
     data = datetime.now()
 
     ids = pl.read_database_uri('SELECT "id" from deputados', path_db).to_series().to_list()
@@ -99,6 +99,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    extractDespesas()
 
 
