@@ -1,0 +1,35 @@
+[2023-11-24T16:24:31.699+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:05:31.290567+00:00 [queued]>
+[2023-11-24T16:24:31.707+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:05:31.290567+00:00 [queued]>
+[2023-11-24T16:24:31.708+0000] {taskinstance.py:1361} INFO - Starting attempt 3 of 4
+[2023-11-24T16:24:31.721+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_extract_despesas> on 2023-11-24 16:05:31.290567+00:00
+[2023-11-24T16:24:31.726+0000] {standard_task_runner.py:57} INFO - Started process 122 to run task
+[2023-11-24T16:24:31.729+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_extract_despesas', 'scheduled__2023-11-24T16:05:31.290567+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmpn1z6yugi']
+[2023-11-24T16:24:31.731+0000] {standard_task_runner.py:85} INFO - Job 47: Subtask task_extract_despesas
+[2023-11-24T16:24:31.780+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:05:31.290567+00:00 [running]> on host eea2b93d502c
+[2023-11-24T16:24:31.844+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_extract_despesas' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T16:05:31.290567+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-24T16:05:31.290567+00:00'
+[2023-11-24T16:24:31.872+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/io/database.py", line 725, in _read_sql_connectorx
+    tbl = cx.read_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/connectorx/__init__.py", line 297, in read_sql
+    result = _read_sql(
+RuntimeError: db error: ERROR: relation "deputados" does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/get_despesas_stg.py", line 97, in extractDespesas
+    ids = pl.read_database_uri('SELECT "id" from deputados', path_db).to_series().to_list()
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/io/database.py", line 689, in read_database_uri
+    return _read_sql_connectorx(
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/io/database.py", line 737, in _read_sql_connectorx
+    raise type(err)(errmsg) from err
+RuntimeError: db error: ERROR: relation "deputados" does not exist
+[2023-11-24T16:24:31.888+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_extract_despesas, task_id=task_extract_despesas, execution_date=20231124T160531, start_date=20231124T162431, end_date=20231124T162431
+[2023-11-24T16:24:31.904+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 47 for task task_extract_despesas (db error: ERROR: relation "deputados" does not exist; 122)
+[2023-11-24T16:24:31.942+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T16:24:31.967+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

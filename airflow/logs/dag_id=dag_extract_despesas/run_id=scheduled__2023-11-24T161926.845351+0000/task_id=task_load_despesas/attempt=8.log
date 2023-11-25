@@ -1,0 +1,48 @@
+[2023-11-24T17:36:50.364+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_load_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T17:36:50.381+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_load_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T17:36:50.382+0000] {taskinstance.py:1361} INFO - Starting attempt 8 of 9
+[2023-11-24T17:36:50.400+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_load_despesas> on 2023-11-24 16:19:26.845351+00:00
+[2023-11-24T17:36:50.408+0000] {standard_task_runner.py:57} INFO - Started process 1540 to run task
+[2023-11-24T17:36:50.412+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_load_despesas', 'scheduled__2023-11-24T16:19:26.845351+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmpa6hik6pk']
+[2023-11-24T17:36:50.413+0000] {standard_task_runner.py:85} INFO - Job 77: Subtask task_load_despesas
+[2023-11-24T17:36:50.465+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_load_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [running]> on host eea2b93d502c
+[2023-11-24T17:36:50.541+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_load_despesas' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T16:19:26.845351+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-24T16:19:26.845351+00:00'
+[2023-11-24T17:36:54.290+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/etl.py", line 276, in loadDespesasFinal
+    df.write_database("despesas", path_db, if_exists="append", engine="sqlalchemy")
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/utils/deprecation.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/dataframe/frame.py", line 3502, in write_database
+    self.to_pandas(use_pyarrow_extension_array=True).to_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 2878, in to_sql
+    return sql.to_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 769, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1910, in to_sql
+    table = self.prep_table(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1804, in prep_table
+    table = SQLTable(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 880, in __init__
+    self.table = self._create_table_setup()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1169, in _create_table_setup
+    column_names_and_types = self._get_column_names_and_types(self._sqlalchemy_type)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1154, in _get_column_names_and_types
+    column_names_and_types += [
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1155, in <listcomp>
+    (str(self.frame.columns[i]), dtype_mapper(self.frame.iloc[:, i]), False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1274, in _sqlalchemy_type
+    if col.dt.tz is not None:
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/accessor.py", line 96, in _getter
+    return self._delegate_property_get(name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexes/accessors.py", line 174, in _delegate_property_get
+    raise NotImplementedError(
+NotImplementedError: dt.tz is not supported for date32[day][pyarrow]
+[2023-11-24T17:36:54.328+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_extract_despesas, task_id=task_load_despesas, execution_date=20231124T161926, start_date=20231124T173650, end_date=20231124T173654
+[2023-11-24T17:36:54.353+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 77 for task task_load_despesas (dt.tz is not supported for date32[day][pyarrow]; 1540)
+[2023-11-24T17:36:54.364+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T17:36:54.379+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

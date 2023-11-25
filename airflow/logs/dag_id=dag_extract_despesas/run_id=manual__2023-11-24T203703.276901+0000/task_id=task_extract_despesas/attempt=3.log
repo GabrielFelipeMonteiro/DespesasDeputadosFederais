@@ -1,0 +1,2 @@
+[2023-11-25T03:33:50.760+0000] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: dag_extract_despesas.task_extract_despesas manual__2023-11-24T20:37:03.276901+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2023-11-25T03:33:50.760299+00:00 and task will be retried at 2023-11-25T03:34:46.378887+00:00.
+[2023-11-25T03:33:50.888+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run
