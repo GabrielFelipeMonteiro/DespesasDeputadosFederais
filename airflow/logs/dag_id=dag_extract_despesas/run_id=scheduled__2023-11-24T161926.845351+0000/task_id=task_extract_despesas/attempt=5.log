@@ -1,0 +1,1126 @@
+[2023-11-24T16:37:02.668+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T16:37:02.679+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T16:37:02.680+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 8
+[2023-11-24T16:37:02.700+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_extract_despesas> on 2023-11-24 16:19:26.845351+00:00
+[2023-11-24T16:37:02.707+0000] {standard_task_runner.py:57} INFO - Started process 348 to run task
+[2023-11-24T16:37:02.709+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_extract_despesas', 'scheduled__2023-11-24T16:19:26.845351+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmp8kox1nyt']
+[2023-11-24T16:37:02.711+0000] {standard_task_runner.py:85} INFO - Job 53: Subtask task_extract_despesas
+[2023-11-24T16:37:02.822+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_extract_despesas scheduled__2023-11-24T16:19:26.845351+00:00 [running]> on host eea2b93d502c
+[2023-11-24T16:37:02.935+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_extract_despesas' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T16:19:26.845351+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-24T16:19:26.845351+00:00'
+[2023-11-24T16:37:04.648+0000] {logging_mixin.py:154} INFO - Despesas do deputado 215043 do mês 11 extraída!
+[2023-11-24T16:37:04.651+0000] {logging_mixin.py:154} INFO - Lote de despesas de 215043 do mês 11 adicionado!
+[2023-11-24T16:37:06.689+0000] {logging_mixin.py:154} INFO - Despesas do deputado 139285 do mês 11 extraída!
+[2023-11-24T16:37:06.693+0000] {logging_mixin.py:154} INFO - Lote de despesas de 139285 do mês 11 adicionado!
+[2023-11-24T16:37:08.738+0000] {logging_mixin.py:154} INFO - Despesas do deputado 157130 do mês 11 extraída!
+[2023-11-24T16:37:08.742+0000] {logging_mixin.py:154} INFO - Lote de despesas de 157130 do mês 11 adicionado!
+[2023-11-24T16:37:10.786+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73768 do mês 11 extraída!
+[2023-11-24T16:37:10.792+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73768 do mês 11 adicionado!
+[2023-11-24T16:37:12.853+0000] {logging_mixin.py:154} INFO - Despesas do deputado 210989 do mês 11 extraída!
+[2023-11-24T16:37:12.857+0000] {logging_mixin.py:154} INFO - Lote de despesas de 210989 do mês 11 adicionado!
+[2023-11-24T16:37:14.893+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73778 do mês 11 extraída!
+[2023-11-24T16:37:14.899+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73778 do mês 11 adicionado!
+[2023-11-24T16:37:16.930+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73788 do mês 11 extraída!
+[2023-11-24T16:37:16.942+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73788 do mês 11 adicionado!
+[2023-11-24T16:37:18.972+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73801 do mês 11 extraída!
+[2023-11-24T16:37:18.975+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73801 do mês 11 adicionado!
+[2023-11-24T16:37:21.037+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73806 do mês 11 extraída!
+[2023-11-24T16:37:21.072+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73806 do mês 11 adicionado!
+[2023-11-24T16:37:23.123+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141391 do mês 11 extraída!
+[2023-11-24T16:37:23.126+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141391 do mês 11 adicionado!
+[2023-11-24T16:37:25.206+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73808 do mês 11 extraída!
+[2023-11-24T16:37:25.217+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73808 do mês 11 adicionado!
+[2023-11-24T16:37:27.314+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141398 do mês 11 extraída!
+[2023-11-24T16:37:27.318+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141398 do mês 11 adicionado!
+[2023-11-24T16:37:29.360+0000] {logging_mixin.py:154} INFO - Despesas do deputado 122974 do mês 11 extraída!
+[2023-11-24T16:37:29.363+0000] {logging_mixin.py:154} INFO - Lote de despesas de 122974 do mês 11 adicionado!
+[2023-11-24T16:37:31.393+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141408 do mês 11 extraída!
+[2023-11-24T16:37:31.399+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141408 do mês 11 adicionado!
+[2023-11-24T16:37:33.448+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141411 do mês 11 extraída!
+[2023-11-24T16:37:33.451+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141411 do mês 11 adicionado!
+[2023-11-24T16:37:35.491+0000] {logging_mixin.py:154} INFO - Despesas do deputado 104552 do mês 11 extraída!
+[2023-11-24T16:37:35.495+0000] {logging_mixin.py:154} INFO - Lote de despesas de 104552 do mês 11 adicionado!
+[2023-11-24T16:37:37.553+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225386 do mês 11 extraída!
+[2023-11-24T16:37:37.560+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225386 do mês 11 adicionado!
+[2023-11-24T16:37:39.614+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141421 do mês 11 extraída!
+[2023-11-24T16:37:39.625+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141421 do mês 11 adicionado!
+[2023-11-24T16:37:41.650+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141431 do mês 11 extraída!
+[2023-11-24T16:37:41.653+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141431 do mês 11 adicionado!
+[2023-11-24T16:37:43.742+0000] {logging_mixin.py:154} INFO - Despesas do deputado 198783 do mês 11 extraída!
+[2023-11-24T16:37:43.750+0000] {logging_mixin.py:154} INFO - Lote de despesas de 198783 do mês 11 adicionado!
+[2023-11-24T16:37:45.830+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141450 do mês 11 extraída!
+[2023-11-24T16:37:45.834+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141450 do mês 11 adicionado!
+[2023-11-24T16:37:47.857+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221328 do mês 11 extraída!
+[2023-11-24T16:37:47.860+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221328 do mês 11 adicionado!
+[2023-11-24T16:37:49.890+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141456 do mês 11 extraída!
+[2023-11-24T16:37:49.894+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141456 do mês 11 adicionado!
+[2023-11-24T16:37:51.983+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141458 do mês 11 extraída!
+[2023-11-24T16:37:51.990+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141458 do mês 11 adicionado!
+[2023-11-24T16:37:54.035+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141459 do mês 11 extraída!
+[2023-11-24T16:37:54.039+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141459 do mês 11 adicionado!
+[2023-11-24T16:37:56.085+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221329 do mês 11 extraída!
+[2023-11-24T16:37:56.088+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221329 do mês 11 adicionado!
+[2023-11-24T16:37:58.184+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141464 do mês 11 extraída!
+[2023-11-24T16:37:58.190+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141464 do mês 11 adicionado!
+[2023-11-24T16:38:00.260+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221338 do mês 11 extraída!
+[2023-11-24T16:38:00.274+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221338 do mês 11 adicionado!
+[2023-11-24T16:38:02.344+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221339 do mês 11 extraída!
+[2023-11-24T16:38:02.349+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221339 do mês 11 adicionado!
+[2023-11-24T16:38:04.408+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141470 do mês 11 extraída!
+[2023-11-24T16:38:04.411+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141470 do mês 11 adicionado!
+[2023-11-24T16:38:06.440+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141480 do mês 11 extraída!
+[2023-11-24T16:38:06.443+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141480 do mês 11 adicionado!
+[2023-11-24T16:38:08.534+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141485 do mês 11 extraída!
+[2023-11-24T16:38:08.539+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141485 do mês 11 adicionado!
+[2023-11-24T16:38:10.617+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141487 do mês 11 extraída!
+[2023-11-24T16:38:10.625+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141487 do mês 11 adicionado!
+[2023-11-24T16:38:12.662+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141488 do mês 11 extraída!
+[2023-11-24T16:38:12.665+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141488 do mês 11 adicionado!
+[2023-11-24T16:38:14.701+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92346 do mês 11 extraída!
+[2023-11-24T16:38:14.703+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92346 do mês 11 adicionado!
+[2023-11-24T16:38:16.780+0000] {logging_mixin.py:154} INFO - Despesas do deputado 88256 do mês 11 extraída!
+[2023-11-24T16:38:16.784+0000] {logging_mixin.py:154} INFO - Lote de despesas de 88256 do mês 11 adicionado!
+[2023-11-24T16:38:18.852+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221378 do mês 11 extraída!
+[2023-11-24T16:38:18.856+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221378 do mês 11 adicionado!
+[2023-11-24T16:38:20.867+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141516 do mês 11 extraída!
+[2023-11-24T16:38:20.870+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141516 do mês 11 adicionado!
+[2023-11-24T16:38:22.898+0000] {logging_mixin.py:154} INFO - Despesas do deputado 123086 do mês 11 extraída!
+[2023-11-24T16:38:22.902+0000] {logging_mixin.py:154} INFO - Lote de despesas de 123086 do mês 11 adicionado!
+[2023-11-24T16:38:24.952+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141531 do mês 11 extraída!
+[2023-11-24T16:38:24.961+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141531 do mês 11 adicionado!
+[2023-11-24T16:38:26.986+0000] {logging_mixin.py:154} INFO - Despesas do deputado 69871 do mês 11 extraída!
+[2023-11-24T16:38:26.989+0000] {logging_mixin.py:154} INFO - Lote de despesas de 69871 do mês 11 adicionado!
+[2023-11-24T16:38:29.044+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141555 do mês 11 extraída!
+[2023-11-24T16:38:29.049+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141555 do mês 11 adicionado!
+[2023-11-24T16:38:31.098+0000] {logging_mixin.py:154} INFO - Despesas do deputado 143632 do mês 11 extraída!
+[2023-11-24T16:38:31.108+0000] {logging_mixin.py:154} INFO - Lote de despesas de 143632 do mês 11 adicionado!
+[2023-11-24T16:38:33.189+0000] {logging_mixin.py:154} INFO - Despesas do deputado 162067 do mês 11 extraída!
+[2023-11-24T16:38:33.197+0000] {logging_mixin.py:154} INFO - Lote de despesas de 162067 do mês 11 adicionado!
+[2023-11-24T16:38:35.226+0000] {logging_mixin.py:154} INFO - Despesas do deputado 213274 do mês 11 extraída!
+[2023-11-24T16:38:35.229+0000] {logging_mixin.py:154} INFO - Lote de despesas de 213274 do mês 11 adicionado!
+[2023-11-24T16:38:37.285+0000] {logging_mixin.py:154} INFO - Despesas do deputado 209189 do mês 11 extraída!
+[2023-11-24T16:38:37.289+0000] {logging_mixin.py:154} INFO - Lote de despesas de 209189 do mês 11 adicionado!
+[2023-11-24T16:38:39.355+0000] {logging_mixin.py:154} INFO - Despesas do deputado 98615 do mês 11 extraída!
+[2023-11-24T16:38:39.362+0000] {logging_mixin.py:154} INFO - Lote de despesas de 98615 do mês 11 adicionado!
+[2023-11-24T16:38:41.447+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74041 do mês 11 extraída!
+[2023-11-24T16:38:41.449+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74041 do mês 11 adicionado!
+[2023-11-24T16:38:43.478+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74043 do mês 11 extraída!
+[2023-11-24T16:38:43.481+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74043 do mês 11 adicionado!
+[2023-11-24T16:38:45.521+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74044 do mês 11 extraída!
+[2023-11-24T16:38:45.524+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74044 do mês 11 adicionado!
+[2023-11-24T16:38:47.569+0000] {logging_mixin.py:154} INFO - Despesas do deputado 133439 do mês 11 extraída!
+[2023-11-24T16:38:47.578+0000] {logging_mixin.py:154} INFO - Lote de despesas de 133439 do mês 11 adicionado!
+[2023-11-24T16:38:49.666+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74057 do mês 11 extraída!
+[2023-11-24T16:38:49.669+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74057 do mês 11 adicionado!
+[2023-11-24T16:38:51.725+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74060 do mês 11 extraída!
+[2023-11-24T16:38:51.727+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74060 do mês 11 adicionado!
+[2023-11-24T16:38:53.772+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74075 do mês 11 extraída!
+[2023-11-24T16:38:53.776+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74075 do mês 11 adicionado!
+[2023-11-24T16:38:55.813+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74079 do mês 11 extraída!
+[2023-11-24T16:38:55.817+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74079 do mês 11 adicionado!
+[2023-11-24T16:38:57.910+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74084 do mês 11 extraída!
+[2023-11-24T16:38:57.915+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74084 do mês 11 adicionado!
+[2023-11-24T16:38:59.999+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74090 do mês 11 extraída!
+[2023-11-24T16:39:00.008+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74090 do mês 11 adicionado!
+[2023-11-24T16:39:02.042+0000] {logging_mixin.py:154} INFO - Despesas do deputado 217480 do mês 11 extraída!
+[2023-11-24T16:39:02.045+0000] {logging_mixin.py:154} INFO - Lote de despesas de 217480 do mês 11 adicionado!
+[2023-11-24T16:39:04.101+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74141 do mês 11 extraída!
+[2023-11-24T16:39:04.104+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74141 do mês 11 adicionado!
+[2023-11-24T16:39:06.120+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160161 do mês 11 extraída!
+[2023-11-24T16:39:06.123+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160161 do mês 11 adicionado!
+[2023-11-24T16:39:08.189+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74156 do mês 11 extraída!
+[2023-11-24T16:39:08.192+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74156 do mês 11 adicionado!
+[2023-11-24T16:39:10.257+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74158 do mês 11 extraída!
+[2023-11-24T16:39:10.262+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74158 do mês 11 adicionado!
+[2023-11-24T16:39:12.380+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74159 do mês 11 extraída!
+[2023-11-24T16:39:12.389+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74159 do mês 11 adicionado!
+[2023-11-24T16:39:14.446+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74160 do mês 11 extraída!
+[2023-11-24T16:39:14.449+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74160 do mês 11 adicionado!
+[2023-11-24T16:39:16.514+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74161 do mês 11 extraída!
+[2023-11-24T16:39:16.523+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74161 do mês 11 adicionado!
+[2023-11-24T16:39:18.592+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74171 do mês 11 extraída!
+[2023-11-24T16:39:18.599+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74171 do mês 11 adicionado!
+[2023-11-24T16:39:20.673+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225727 do mês 11 extraída!
+[2023-11-24T16:39:20.684+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225727 do mês 11 adicionado!
+[2023-11-24T16:39:22.742+0000] {logging_mixin.py:154} INFO - Despesas do deputado 219585 do mês 11 extraída!
+[2023-11-24T16:39:22.751+0000] {logging_mixin.py:154} INFO - Lote de despesas de 219585 do mês 11 adicionado!
+[2023-11-24T16:39:24.801+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225730 do mês 11 extraída!
+[2023-11-24T16:39:24.805+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225730 do mês 11 adicionado!
+[2023-11-24T16:39:26.828+0000] {logging_mixin.py:154} INFO - Despesas do deputado 163321 do mês 11 extraída!
+[2023-11-24T16:39:26.832+0000] {logging_mixin.py:154} INFO - Lote de despesas de 163321 do mês 11 adicionado!
+[2023-11-24T16:39:28.868+0000] {logging_mixin.py:154} INFO - Despesas do deputado 166402 do mês 11 extraída!
+[2023-11-24T16:39:28.884+0000] {logging_mixin.py:154} INFO - Lote de despesas de 166402 do mês 11 adicionado!
+[2023-11-24T16:39:30.955+0000] {logging_mixin.py:154} INFO - Despesas do deputado 164360 do mês 11 extraída!
+[2023-11-24T16:39:30.964+0000] {logging_mixin.py:154} INFO - Lote de despesas de 164360 do mês 11 adicionado!
+[2023-11-24T16:39:33.029+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74253 do mês 11 extraída!
+[2023-11-24T16:39:33.032+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74253 do mês 11 adicionado!
+[2023-11-24T16:39:35.060+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74262 do mês 11 extraída!
+[2023-11-24T16:39:35.065+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74262 do mês 11 adicionado!
+[2023-11-24T16:39:37.110+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226837 do mês 11 extraída!
+[2023-11-24T16:39:37.114+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226837 do mês 11 adicionado!
+[2023-11-24T16:39:39.216+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92699 do mês 11 extraída!
+[2023-11-24T16:39:39.225+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92699 do mês 11 adicionado!
+[2023-11-24T16:39:41.297+0000] {logging_mixin.py:154} INFO - Despesas do deputado 162332 do mês 11 extraída!
+[2023-11-24T16:39:41.305+0000] {logging_mixin.py:154} INFO - Lote de despesas de 162332 do mês 11 adicionado!
+[2023-11-24T16:39:43.369+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74270 do mês 11 extraída!
+[2023-11-24T16:39:43.377+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74270 do mês 11 adicionado!
+[2023-11-24T16:39:45.417+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74356 do mês 11 extraída!
+[2023-11-24T16:39:45.421+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74356 do mês 11 adicionado!
+[2023-11-24T16:39:47.456+0000] {logging_mixin.py:154} INFO - Despesas do deputado 156190 do mês 11 extraída!
+[2023-11-24T16:39:47.468+0000] {logging_mixin.py:154} INFO - Lote de despesas de 156190 do mês 11 adicionado!
+[2023-11-24T16:39:49.514+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74273 do mês 11 extraída!
+[2023-11-24T16:39:49.521+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74273 do mês 11 adicionado!
+[2023-11-24T16:39:51.556+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74283 do mês 11 extraída!
+[2023-11-24T16:39:51.559+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74283 do mês 11 adicionado!
+[2023-11-24T16:39:53.609+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74299 do mês 11 extraída!
+[2023-11-24T16:39:53.613+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74299 do mês 11 adicionado!
+[2023-11-24T16:39:55.631+0000] {logging_mixin.py:154} INFO - Despesas do deputado 154178 do mês 11 extraída!
+[2023-11-24T16:39:55.635+0000] {logging_mixin.py:154} INFO - Lote de despesas de 154178 do mês 11 adicionado!
+[2023-11-24T16:39:57.685+0000] {logging_mixin.py:154} INFO - Despesas do deputado 143942 do mês 11 extraída!
+[2023-11-24T16:39:57.694+0000] {logging_mixin.py:154} INFO - Lote de despesas de 143942 do mês 11 adicionado!
+[2023-11-24T16:39:59.715+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74317 do mês 11 extraída!
+[2023-11-24T16:39:59.718+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74317 do mês 11 adicionado!
+[2023-11-24T16:40:01.779+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92776 do mês 11 extraída!
+[2023-11-24T16:40:01.788+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92776 do mês 11 adicionado!
+[2023-11-24T16:40:03.825+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74371 do mês 11 extraída!
+[2023-11-24T16:40:03.830+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74371 do mês 11 adicionado!
+[2023-11-24T16:40:05.859+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74374 do mês 11 extraída!
+[2023-11-24T16:40:05.864+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74374 do mês 11 adicionado!
+[2023-11-24T16:40:07.884+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74376 do mês 11 extraída!
+[2023-11-24T16:40:07.887+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74376 do mês 11 adicionado!
+[2023-11-24T16:40:09.947+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178829 do mês 11 extraída!
+[2023-11-24T16:40:09.950+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178829 do mês 11 adicionado!
+[2023-11-24T16:40:11.988+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74383 do mês 11 extraída!
+[2023-11-24T16:40:11.991+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74383 do mês 11 adicionado!
+[2023-11-24T16:40:14.087+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178832 do mês 11 extraída!
+[2023-11-24T16:40:14.095+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178832 do mês 11 adicionado!
+[2023-11-24T16:40:16.163+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178835 do mês 11 extraída!
+[2023-11-24T16:40:16.166+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178835 do mês 11 adicionado!
+[2023-11-24T16:40:18.236+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178843 do mês 11 extraída!
+[2023-11-24T16:40:18.240+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178843 do mês 11 adicionado!
+[2023-11-24T16:40:20.349+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74398 do mês 11 extraída!
+[2023-11-24T16:40:20.353+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74398 do mês 11 adicionado!
+[2023-11-24T16:40:22.396+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74400 do mês 11 extraída!
+[2023-11-24T16:40:22.404+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74400 do mês 11 adicionado!
+[2023-11-24T16:40:24.502+0000] {logging_mixin.py:154} INFO - Despesas do deputado 205476 do mês 11 extraída!
+[2023-11-24T16:40:24.507+0000] {logging_mixin.py:154} INFO - Lote de despesas de 205476 do mês 11 adicionado!
+[2023-11-24T16:40:26.583+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178854 do mês 11 extraída!
+[2023-11-24T16:40:26.592+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178854 do mês 11 adicionado!
+[2023-11-24T16:40:28.647+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178857 do mês 11 extraída!
+[2023-11-24T16:40:28.650+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178857 do mês 11 adicionado!
+[2023-11-24T16:40:30.703+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178858 do mês 11 extraída!
+[2023-11-24T16:40:30.706+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178858 do mês 11 adicionado!
+[2023-11-24T16:40:32.745+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178860 do mês 11 extraída!
+[2023-11-24T16:40:32.748+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178860 do mês 11 adicionado!
+[2023-11-24T16:40:34.778+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178866 do mês 11 extraída!
+[2023-11-24T16:40:34.781+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178866 do mês 11 adicionado!
+[2023-11-24T16:40:36.840+0000] {logging_mixin.py:154} INFO - Despesas do deputado 133810 do mês 11 extraída!
+[2023-11-24T16:40:36.843+0000] {logging_mixin.py:154} INFO - Lote de despesas de 133810 do mês 11 adicionado!
+[2023-11-24T16:40:39.120+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178871 do mês 11 extraída!
+[2023-11-24T16:40:39.129+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178871 do mês 11 adicionado!
+[2023-11-24T16:40:41.212+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178873 do mês 11 extraída!
+[2023-11-24T16:40:41.217+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178873 do mês 11 adicionado!
+[2023-11-24T16:40:43.253+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178876 do mês 11 extraída!
+[2023-11-24T16:40:43.261+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178876 do mês 11 adicionado!
+[2023-11-24T16:40:45.324+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74428 do mês 11 extraída!
+[2023-11-24T16:40:45.328+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74428 do mês 11 adicionado!
+[2023-11-24T16:40:47.369+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178881 do mês 11 extraída!
+[2023-11-24T16:40:47.372+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178881 do mês 11 adicionado!
+[2023-11-24T16:40:49.426+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178882 do mês 11 extraída!
+[2023-11-24T16:40:49.438+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178882 do mês 11 adicionado!
+[2023-11-24T16:40:51.535+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178886 do mês 11 extraída!
+[2023-11-24T16:40:51.547+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178886 do mês 11 adicionado!
+[2023-11-24T16:40:53.814+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178887 do mês 11 extraída!
+[2023-11-24T16:40:53.821+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178887 do mês 11 adicionado!
+[2023-11-24T16:40:55.884+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178895 do mês 11 extraída!
+[2023-11-24T16:40:55.887+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178895 do mês 11 adicionado!
+[2023-11-24T16:40:57.918+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178896 do mês 11 extraída!
+[2023-11-24T16:40:57.921+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178896 do mês 11 adicionado!
+[2023-11-24T16:40:59.958+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74454 do mês 11 extraída!
+[2023-11-24T16:40:59.963+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74454 do mês 11 adicionado!
+[2023-11-24T16:41:02.004+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178905 do mês 11 extraída!
+[2023-11-24T16:41:02.016+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178905 do mês 11 adicionado!
+[2023-11-24T16:41:04.048+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178908 do mês 11 extraída!
+[2023-11-24T16:41:04.052+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178908 do mês 11 adicionado!
+[2023-11-24T16:41:06.106+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178909 do mês 11 extraída!
+[2023-11-24T16:41:06.110+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178909 do mês 11 adicionado!
+[2023-11-24T16:41:08.172+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178910 do mês 11 extraída!
+[2023-11-24T16:41:08.175+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178910 do mês 11 adicionado!
+[2023-11-24T16:41:10.230+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74467 do mês 11 extraída!
+[2023-11-24T16:41:10.243+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74467 do mês 11 adicionado!
+[2023-11-24T16:41:12.305+0000] {logging_mixin.py:154} INFO - Despesas do deputado 205550 do mês 11 extraída!
+[2023-11-24T16:41:12.318+0000] {logging_mixin.py:154} INFO - Lote de despesas de 205550 do mês 11 adicionado!
+[2023-11-24T16:41:14.383+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178927 do mês 11 extraída!
+[2023-11-24T16:41:14.396+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178927 do mês 11 adicionado!
+[2023-11-24T16:41:16.471+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74478 do mês 11 extraída!
+[2023-11-24T16:41:16.480+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74478 do mês 11 adicionado!
+[2023-11-24T16:41:18.529+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178929 do mês 11 extraída!
+[2023-11-24T16:41:18.534+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178929 do mês 11 adicionado!
+[2023-11-24T16:41:20.610+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178931 do mês 11 extraída!
+[2023-11-24T16:41:20.614+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178931 do mês 11 adicionado!
+[2023-11-24T16:41:22.659+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178933 do mês 11 extraída!
+[2023-11-24T16:41:22.668+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178933 do mês 11 adicionado!
+[2023-11-24T16:41:24.772+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178934 do mês 11 extraída!
+[2023-11-24T16:41:24.777+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178934 do mês 11 adicionado!
+[2023-11-24T16:41:26.851+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178937 do mês 11 extraída!
+[2023-11-24T16:41:26.860+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178937 do mês 11 adicionado!
+[2023-11-24T16:41:28.954+0000] {logging_mixin.py:154} INFO - Despesas do deputado 72442 do mês 11 extraída!
+[2023-11-24T16:41:28.962+0000] {logging_mixin.py:154} INFO - Lote de despesas de 72442 do mês 11 adicionado!
+[2023-11-24T16:41:30.991+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160508 do mês 11 extraída!
+[2023-11-24T16:41:30.995+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160508 do mês 11 adicionado!
+[2023-11-24T16:41:33.049+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160510 do mês 11 extraída!
+[2023-11-24T16:41:33.053+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160510 do mês 11 adicionado!
+[2023-11-24T16:41:35.147+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178943 do mês 11 extraída!
+[2023-11-24T16:41:35.154+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178943 do mês 11 adicionado!
+[2023-11-24T16:41:37.211+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160512 do mês 11 extraída!
+[2023-11-24T16:41:37.214+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160512 do mês 11 adicionado!
+[2023-11-24T16:41:39.283+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178945 do mês 11 extraída!
+[2023-11-24T16:41:39.296+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178945 do mês 11 adicionado!
+[2023-11-24T16:41:41.369+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178946 do mês 11 extraída!
+[2023-11-24T16:41:41.378+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178946 do mês 11 adicionado!
+[2023-11-24T16:41:43.418+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178947 do mês 11 extraída!
+[2023-11-24T16:41:43.422+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178947 do mês 11 adicionado!
+[2023-11-24T16:41:45.475+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160517 do mês 11 extraída!
+[2023-11-24T16:41:45.483+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160517 do mês 11 adicionado!
+[2023-11-24T16:41:47.565+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160518 do mês 11 extraída!
+[2023-11-24T16:41:47.572+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160518 do mês 11 adicionado!
+[2023-11-24T16:41:49.672+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178954 do mês 11 extraída!
+[2023-11-24T16:41:49.676+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178954 do mês 11 adicionado!
+[2023-11-24T16:41:51.752+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160527 do mês 11 extraída!
+[2023-11-24T16:41:51.756+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160527 do mês 11 adicionado!
+[2023-11-24T16:41:53.807+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178962 do mês 11 extraída!
+[2023-11-24T16:41:53.811+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178962 do mês 11 adicionado!
+[2023-11-24T16:41:55.855+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178963 do mês 11 extraída!
+[2023-11-24T16:41:55.858+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178963 do mês 11 adicionado!
+[2023-11-24T16:41:57.914+0000] {logging_mixin.py:154} INFO - Despesas do deputado 107283 do mês 11 extraída!
+[2023-11-24T16:41:57.923+0000] {logging_mixin.py:154} INFO - Lote de despesas de 107283 do mês 11 adicionado!
+[2023-11-24T16:42:00.235+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178964 do mês 11 extraída!
+[2023-11-24T16:42:00.244+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178964 do mês 11 adicionado!
+[2023-11-24T16:42:02.318+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178966 do mês 11 extraída!
+[2023-11-24T16:42:02.323+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178966 do mês 11 adicionado!
+[2023-11-24T16:42:04.393+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160531 do mês 11 extraída!
+[2023-11-24T16:42:04.396+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160531 do mês 11 adicionado!
+[2023-11-24T16:42:06.494+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160535 do mês 11 extraída!
+[2023-11-24T16:42:06.501+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160535 do mês 11 adicionado!
+[2023-11-24T16:42:08.588+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160538 do mês 11 extraída!
+[2023-11-24T16:42:08.591+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160538 do mês 11 adicionado!
+[2023-11-24T16:42:10.626+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178970 do mês 11 extraída!
+[2023-11-24T16:42:10.630+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178970 do mês 11 adicionado!
+[2023-11-24T16:42:12.711+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178972 do mês 11 extraída!
+[2023-11-24T16:42:12.716+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178972 do mês 11 adicionado!
+[2023-11-24T16:42:14.769+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160541 do mês 11 extraída!
+[2023-11-24T16:42:14.773+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160541 do mês 11 adicionado!
+[2023-11-24T16:42:16.823+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226075 do mês 11 extraída!
+[2023-11-24T16:42:16.836+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226075 do mês 11 adicionado!
+[2023-11-24T16:42:18.879+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178975 do mês 11 extraída!
+[2023-11-24T16:42:18.885+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178975 do mês 11 adicionado!
+[2023-11-24T16:42:20.992+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160545 do mês 11 extraída!
+[2023-11-24T16:42:21.004+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160545 do mês 11 adicionado!
+[2023-11-24T16:42:23.102+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160548 do mês 11 extraída!
+[2023-11-24T16:42:23.111+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160548 do mês 11 adicionado!
+[2023-11-24T16:42:25.181+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178983 do mês 11 extraída!
+[2023-11-24T16:42:25.193+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178983 do mês 11 adicionado!
+[2023-11-24T16:42:27.238+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160552 do mês 11 extraída!
+[2023-11-24T16:42:27.245+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160552 do mês 11 adicionado!
+[2023-11-24T16:42:29.323+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160553 do mês 11 extraída!
+[2023-11-24T16:42:29.330+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160553 do mês 11 adicionado!
+[2023-11-24T16:42:31.422+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74537 do mês 11 extraída!
+[2023-11-24T16:42:31.434+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74537 do mês 11 adicionado!
+[2023-11-24T16:42:33.511+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178985 do mês 11 extraída!
+[2023-11-24T16:42:33.514+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178985 do mês 11 adicionado!
+[2023-11-24T16:42:35.615+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178986 do mês 11 extraída!
+[2023-11-24T16:42:35.618+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178986 do mês 11 adicionado!
+[2023-11-24T16:42:37.693+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178987 do mês 11 extraída!
+[2023-11-24T16:42:37.696+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178987 do mês 11 adicionado!
+[2023-11-24T16:42:39.739+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160556 do mês 11 extraída!
+[2023-11-24T16:42:39.743+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160556 do mês 11 adicionado!
+[2023-11-24T16:42:41.772+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160559 do mês 11 extraída!
+[2023-11-24T16:42:41.775+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160559 do mês 11 adicionado!
+[2023-11-24T16:42:43.833+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160558 do mês 11 extraída!
+[2023-11-24T16:42:43.841+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160558 do mês 11 adicionado!
+[2023-11-24T16:42:45.886+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178993 do mês 11 extraída!
+[2023-11-24T16:42:45.889+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178993 do mês 11 adicionado!
+[2023-11-24T16:42:47.946+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178989 do mês 11 extraída!
+[2023-11-24T16:42:47.950+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178989 do mês 11 adicionado!
+[2023-11-24T16:42:50.011+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178992 do mês 11 extraída!
+[2023-11-24T16:42:50.014+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178992 do mês 11 adicionado!
+[2023-11-24T16:42:52.047+0000] {logging_mixin.py:154} INFO - Despesas do deputado 178997 do mês 11 extraída!
+[2023-11-24T16:42:52.051+0000] {logging_mixin.py:154} INFO - Lote de despesas de 178997 do mês 11 adicionado!
+[2023-11-24T16:42:54.173+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74550 do mês 11 extraída!
+[2023-11-24T16:42:54.182+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74550 do mês 11 adicionado!
+[2023-11-24T16:42:56.220+0000] {logging_mixin.py:154} INFO - Despesas do deputado 179000 do mês 11 extraída!
+[2023-11-24T16:42:56.224+0000] {logging_mixin.py:154} INFO - Lote de despesas de 179000 do mês 11 adicionado!
+[2023-11-24T16:42:58.323+0000] {logging_mixin.py:154} INFO - Despesas do deputado 179001 do mês 11 extraída!
+[2023-11-24T16:42:58.331+0000] {logging_mixin.py:154} INFO - Lote de despesas de 179001 do mês 11 adicionado!
+[2023-11-24T16:43:00.404+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74554 do mês 11 extraída!
+[2023-11-24T16:43:00.416+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74554 do mês 11 adicionado!
+[2023-11-24T16:43:02.472+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160569 do mês 11 extraída!
+[2023-11-24T16:43:02.483+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160569 do mês 11 adicionado!
+[2023-11-24T16:43:04.558+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160575 do mês 11 extraída!
+[2023-11-24T16:43:04.562+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160575 do mês 11 adicionado!
+[2023-11-24T16:43:06.598+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160588 do mês 11 extraída!
+[2023-11-24T16:43:06.608+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160588 do mês 11 adicionado!
+[2023-11-24T16:43:08.637+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74574 do mês 11 extraída!
+[2023-11-24T16:43:08.640+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74574 do mês 11 adicionado!
+[2023-11-24T16:43:10.702+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160591 do mês 11 extraída!
+[2023-11-24T16:43:10.715+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160591 do mês 11 adicionado!
+[2023-11-24T16:43:12.749+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160592 do mês 11 extraída!
+[2023-11-24T16:43:12.753+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160592 do mês 11 adicionado!
+[2023-11-24T16:43:14.797+0000] {logging_mixin.py:154} INFO - Despesas do deputado 66385 do mês 11 extraída!
+[2023-11-24T16:43:14.800+0000] {logging_mixin.py:154} INFO - Lote de despesas de 66385 do mês 11 adicionado!
+[2023-11-24T16:43:16.849+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160598 do mês 11 extraída!
+[2023-11-24T16:43:16.861+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160598 do mês 11 adicionado!
+[2023-11-24T16:43:18.949+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160599 do mês 11 extraída!
+[2023-11-24T16:43:18.959+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160599 do mês 11 adicionado!
+[2023-11-24T16:43:20.981+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160600 do mês 11 extraída!
+[2023-11-24T16:43:20.984+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160600 do mês 11 adicionado!
+[2023-11-24T16:43:23.067+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74585 do mês 11 extraída!
+[2023-11-24T16:43:23.080+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74585 do mês 11 adicionado!
+[2023-11-24T16:43:25.129+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160601 do mês 11 extraída!
+[2023-11-24T16:43:25.145+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160601 do mês 11 adicionado!
+[2023-11-24T16:43:27.214+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160604 do mês 11 extraída!
+[2023-11-24T16:43:27.222+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160604 do mês 11 adicionado!
+[2023-11-24T16:43:29.288+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160610 do mês 11 extraída!
+[2023-11-24T16:43:29.292+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160610 do mês 11 adicionado!
+[2023-11-24T16:43:31.411+0000] {logging_mixin.py:154} INFO - Despesas do deputado 123756 do mês 11 extraída!
+[2023-11-24T16:43:31.414+0000] {logging_mixin.py:154} INFO - Lote de despesas de 123756 do mês 11 adicionado!
+[2023-11-24T16:43:33.504+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160621 do mês 11 extraída!
+[2023-11-24T16:43:33.516+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160621 do mês 11 adicionado!
+[2023-11-24T16:43:35.607+0000] {logging_mixin.py:154} INFO - Despesas do deputado 109429 do mês 11 extraída!
+[2023-11-24T16:43:35.610+0000] {logging_mixin.py:154} INFO - Lote de despesas de 109429 do mês 11 adicionado!
+[2023-11-24T16:43:37.734+0000] {logging_mixin.py:154} INFO - Despesas do deputado 224117 do mês 11 extraída!
+[2023-11-24T16:43:37.739+0000] {logging_mixin.py:154} INFO - Lote de despesas de 224117 do mês 11 adicionado!
+[2023-11-24T16:43:39.766+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160629 do mês 11 extraída!
+[2023-11-24T16:43:39.770+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160629 do mês 11 adicionado!
+[2023-11-24T16:43:41.814+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160632 do mês 11 extraída!
+[2023-11-24T16:43:41.818+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160632 do mês 11 adicionado!
+[2023-11-24T16:43:43.863+0000] {logging_mixin.py:154} INFO - Despesas do deputado 209787 do mês 11 extraída!
+[2023-11-24T16:43:43.866+0000] {logging_mixin.py:154} INFO - Lote de despesas de 209787 do mês 11 adicionado!
+[2023-11-24T16:43:45.939+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160635 do mês 11 extraída!
+[2023-11-24T16:43:45.942+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160635 do mês 11 adicionado!
+[2023-11-24T16:43:48.002+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160640 do mês 11 extraída!
+[2023-11-24T16:43:48.007+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160640 do mês 11 adicionado!
+[2023-11-24T16:43:50.112+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160642 do mês 11 extraída!
+[2023-11-24T16:43:50.116+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160642 do mês 11 adicionado!
+[2023-11-24T16:43:52.153+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226179 do mês 11 extraída!
+[2023-11-24T16:43:52.160+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226179 do mês 11 adicionado!
+[2023-11-24T16:43:54.201+0000] {logging_mixin.py:154} INFO - Despesas do deputado 150418 do mês 11 extraída!
+[2023-11-24T16:43:54.205+0000] {logging_mixin.py:154} INFO - Lote de despesas de 150418 do mês 11 adicionado!
+[2023-11-24T16:43:56.236+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74646 do mês 11 extraída!
+[2023-11-24T16:43:56.240+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74646 do mês 11 adicionado!
+[2023-11-24T16:43:58.274+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160665 do mês 11 extraída!
+[2023-11-24T16:43:58.277+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160665 do mês 11 adicionado!
+[2023-11-24T16:44:00.315+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160666 do mês 11 extraída!
+[2023-11-24T16:44:00.319+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160666 do mês 11 adicionado!
+[2023-11-24T16:44:02.385+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160673 do mês 11 extraída!
+[2023-11-24T16:44:02.388+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160673 do mês 11 adicionado!
+[2023-11-24T16:44:04.990+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160674 do mês 11 extraída!
+[2023-11-24T16:44:04.992+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160674 do mês 11 adicionado!
+[2023-11-24T16:44:07.369+0000] {logging_mixin.py:154} INFO - Despesas do deputado 80815 do mês 11 extraída!
+[2023-11-24T16:44:07.373+0000] {logging_mixin.py:154} INFO - Lote de despesas de 80815 do mês 11 adicionado!
+[2023-11-24T16:44:09.446+0000] {logging_mixin.py:154} INFO - Despesas do deputado 222142 do mês 11 extraída!
+[2023-11-24T16:44:09.450+0000] {logging_mixin.py:154} INFO - Lote de despesas de 222142 do mês 11 adicionado!
+[2023-11-24T16:44:11.514+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74696 do mês 11 extraída!
+[2023-11-24T16:44:11.524+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74696 do mês 11 adicionado!
+[2023-11-24T16:44:13.541+0000] {logging_mixin.py:154} INFO - Despesas do deputado 218086 do mês 11 extraída!
+[2023-11-24T16:44:13.545+0000] {logging_mixin.py:154} INFO - Lote de despesas de 218086 do mês 11 adicionado!
+[2023-11-24T16:44:15.629+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160758 do mês 11 extraída!
+[2023-11-24T16:44:15.632+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160758 do mês 11 adicionado!
+[2023-11-24T16:44:17.655+0000] {logging_mixin.py:154} INFO - Despesas do deputado 152605 do mês 11 extraída!
+[2023-11-24T16:44:17.658+0000] {logging_mixin.py:154} INFO - Lote de despesas de 152605 do mês 11 adicionado!
+[2023-11-24T16:44:19.733+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74784 do mês 11 extraída!
+[2023-11-24T16:44:19.744+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74784 do mês 11 adicionado!
+[2023-11-24T16:44:21.828+0000] {logging_mixin.py:154} INFO - Despesas do deputado 205865 do mês 11 extraída!
+[2023-11-24T16:44:21.838+0000] {logging_mixin.py:154} INFO - Lote de despesas de 205865 do mês 11 adicionado!
+[2023-11-24T16:44:23.901+0000] {logging_mixin.py:154} INFO - Despesas do deputado 138286 do mês 11 extraída!
+[2023-11-24T16:44:23.904+0000] {logging_mixin.py:154} INFO - Lote de despesas de 138286 do mês 11 adicionado!
+[2023-11-24T16:44:25.937+0000] {logging_mixin.py:154} INFO - Despesas do deputado 224333 do mês 11 extraída!
+[2023-11-24T16:44:25.941+0000] {logging_mixin.py:154} INFO - Lote de despesas de 224333 do mês 11 adicionado!
+[2023-11-24T16:44:27.973+0000] {logging_mixin.py:154} INFO - Despesas do deputado 121948 do mês 11 extraída!
+[2023-11-24T16:44:27.977+0000] {logging_mixin.py:154} INFO - Lote de despesas de 121948 do mês 11 adicionado!
+[2023-11-24T16:44:30.053+0000] {logging_mixin.py:154} INFO - Despesas do deputado 91228 do mês 11 extraída!
+[2023-11-24T16:44:30.057+0000] {logging_mixin.py:154} INFO - Lote de despesas de 91228 do mês 11 adicionado!
+[2023-11-24T16:44:32.131+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74848 do mês 11 extraída!
+[2023-11-24T16:44:32.138+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74848 do mês 11 adicionado!
+[2023-11-24T16:44:34.217+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74856 do mês 11 extraída!
+[2023-11-24T16:44:34.225+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74856 do mês 11 adicionado!
+[2023-11-24T16:44:36.240+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74858 do mês 11 extraída!
+[2023-11-24T16:44:36.244+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74858 do mês 11 adicionado!
+[2023-11-24T16:44:38.298+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226410 do mês 11 extraída!
+[2023-11-24T16:44:38.312+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226410 do mês 11 adicionado!
+[2023-11-24T16:44:40.362+0000] {logging_mixin.py:154} INFO - Despesas do deputado 81055 do mês 11 extraída!
+[2023-11-24T16:44:40.371+0000] {logging_mixin.py:154} INFO - Lote de despesas de 81055 do mês 11 adicionado!
+[2023-11-24T16:44:42.457+0000] {logging_mixin.py:154} INFO - Despesas do deputado 206018 do mês 11 extraída!
+[2023-11-24T16:44:42.460+0000] {logging_mixin.py:154} INFO - Lote de despesas de 206018 do mês 11 adicionado!
+[2023-11-24T16:44:44.546+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160976 do mês 11 extraída!
+[2023-11-24T16:44:44.550+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160976 do mês 11 adicionado!
+[2023-11-24T16:44:46.605+0000] {logging_mixin.py:154} INFO - Despesas do deputado 222429 do mês 11 extraída!
+[2023-11-24T16:44:46.615+0000] {logging_mixin.py:154} INFO - Lote de despesas de 222429 do mês 11 adicionado!
+[2023-11-24T16:44:48.652+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226553 do mês 11 extraída!
+[2023-11-24T16:44:48.658+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226553 do mês 11 adicionado!
+[2023-11-24T16:44:50.776+0000] {logging_mixin.py:154} INFO - Despesas do deputado 66828 do mês 11 extraída!
+[2023-11-24T16:44:50.780+0000] {logging_mixin.py:154} INFO - Lote de despesas de 66828 do mês 11 adicionado!
+[2023-11-24T16:44:52.869+0000] {logging_mixin.py:154} INFO - Despesas do deputado 122158 do mês 11 extraída!
+[2023-11-24T16:44:52.882+0000] {logging_mixin.py:154} INFO - Lote de despesas de 122158 do mês 11 adicionado!
+[2023-11-24T16:44:54.980+0000] {logging_mixin.py:154} INFO - Despesas do deputado 103758 do mês 11 extraída!
+[2023-11-24T16:44:54.983+0000] {logging_mixin.py:154} INFO - Lote de despesas de 103758 do mês 11 adicionado!
+[2023-11-24T16:44:57.063+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220526 do mês 11 extraída!
+[2023-11-24T16:44:57.071+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220526 do mês 11 adicionado!
+[2023-11-24T16:44:59.139+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220527 do mês 11 extraída!
+[2023-11-24T16:44:59.151+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220527 do mês 11 adicionado!
+[2023-11-24T16:45:01.331+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220528 do mês 11 extraída!
+[2023-11-24T16:45:01.339+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220528 do mês 11 adicionado!
+[2023-11-24T16:45:03.374+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220529 do mês 11 extraída!
+[2023-11-24T16:45:03.379+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220529 do mês 11 adicionado!
+[2023-11-24T16:45:05.445+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220530 do mês 11 extraída!
+[2023-11-24T16:45:05.449+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220530 do mês 11 adicionado!
+[2023-11-24T16:45:07.506+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220531 do mês 11 extraída!
+[2023-11-24T16:45:07.512+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220531 do mês 11 adicionado!
+[2023-11-24T16:45:09.598+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220532 do mês 11 extraída!
+[2023-11-24T16:45:09.602+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220532 do mês 11 adicionado!
+[2023-11-24T16:45:11.623+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220533 do mês 11 extraída!
+[2023-11-24T16:45:11.627+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220533 do mês 11 adicionado!
+[2023-11-24T16:45:13.699+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220534 do mês 11 extraída!
+[2023-11-24T16:45:13.704+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220534 do mês 11 adicionado!
+[2023-11-24T16:45:15.776+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220536 do mês 11 extraída!
+[2023-11-24T16:45:15.781+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220536 do mês 11 adicionado!
+[2023-11-24T16:45:17.973+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220537 do mês 11 extraída!
+[2023-11-24T16:45:17.977+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220537 do mês 11 adicionado!
+[2023-11-24T16:45:20.039+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220538 do mês 11 extraída!
+[2023-11-24T16:45:20.042+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220538 do mês 11 adicionado!
+[2023-11-24T16:45:22.048+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220539 do mês 11 extraída!
+[2023-11-24T16:45:22.051+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220539 do mês 11 adicionado!
+[2023-11-24T16:45:24.092+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220540 do mês 11 extraída!
+[2023-11-24T16:45:24.095+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220540 do mês 11 adicionado!
+[2023-11-24T16:45:26.146+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220542 do mês 11 extraída!
+[2023-11-24T16:45:26.150+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220542 do mês 11 adicionado!
+[2023-11-24T16:45:28.239+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220543 do mês 11 extraída!
+[2023-11-24T16:45:28.243+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220543 do mês 11 adicionado!
+[2023-11-24T16:45:30.294+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220544 do mês 11 extraída!
+[2023-11-24T16:45:30.297+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220544 do mês 11 adicionado!
+[2023-11-24T16:45:32.349+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220545 do mês 11 extraída!
+[2023-11-24T16:45:32.357+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220545 do mês 11 adicionado!
+[2023-11-24T16:45:34.417+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220546 do mês 11 extraída!
+[2023-11-24T16:45:34.426+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220546 do mês 11 adicionado!
+[2023-11-24T16:45:36.487+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220547 do mês 11 extraída!
+[2023-11-24T16:45:36.498+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220547 do mês 11 adicionado!
+[2023-11-24T16:45:38.526+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220548 do mês 11 extraída!
+[2023-11-24T16:45:38.531+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220548 do mês 11 adicionado!
+[2023-11-24T16:45:40.596+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220549 do mês 11 extraída!
+[2023-11-24T16:45:40.604+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220549 do mês 11 adicionado!
+[2023-11-24T16:45:42.646+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220550 do mês 11 extraída!
+[2023-11-24T16:45:42.649+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220550 do mês 11 adicionado!
+[2023-11-24T16:45:44.734+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220551 do mês 11 extraída!
+[2023-11-24T16:45:44.738+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220551 do mês 11 adicionado!
+[2023-11-24T16:45:46.795+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220552 do mês 11 extraída!
+[2023-11-24T16:45:46.798+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220552 do mês 11 adicionado!
+[2023-11-24T16:45:48.888+0000] {logging_mixin.py:154} INFO - Página seguinte acessada para requisição!
+[2023-11-24T16:45:50.687+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220553 do mês 11 extraída!
+[2023-11-24T16:45:50.694+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220553 do mês 11 adicionado!
+[2023-11-24T16:45:52.893+0000] {logging_mixin.py:154} INFO - Página seguinte acessada para requisição!
+[2023-11-24T16:45:54.662+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220554 do mês 11 extraída!
+[2023-11-24T16:45:54.666+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220554 do mês 11 adicionado!
+[2023-11-24T16:45:56.764+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220555 do mês 11 extraída!
+[2023-11-24T16:45:56.771+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220555 do mês 11 adicionado!
+[2023-11-24T16:45:58.818+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220556 do mês 11 extraída!
+[2023-11-24T16:45:58.829+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220556 do mês 11 adicionado!
+[2023-11-24T16:46:00.913+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220557 do mês 11 extraída!
+[2023-11-24T16:46:00.918+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220557 do mês 11 adicionado!
+[2023-11-24T16:46:02.976+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220558 do mês 11 extraída!
+[2023-11-24T16:46:02.980+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220558 do mês 11 adicionado!
+[2023-11-24T16:46:05.038+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220559 do mês 11 extraída!
+[2023-11-24T16:46:05.041+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220559 do mês 11 adicionado!
+[2023-11-24T16:46:07.095+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220560 do mês 11 extraída!
+[2023-11-24T16:46:07.100+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220560 do mês 11 adicionado!
+[2023-11-24T16:46:09.182+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220561 do mês 11 extraída!
+[2023-11-24T16:46:09.185+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220561 do mês 11 adicionado!
+[2023-11-24T16:46:11.253+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220563 do mês 11 extraída!
+[2023-11-24T16:46:11.256+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220563 do mês 11 adicionado!
+[2023-11-24T16:46:13.311+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226708 do mês 11 extraída!
+[2023-11-24T16:46:13.314+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226708 do mês 11 adicionado!
+[2023-11-24T16:46:15.358+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220565 do mês 11 extraída!
+[2023-11-24T16:46:15.362+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220565 do mês 11 adicionado!
+[2023-11-24T16:46:17.586+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220566 do mês 11 extraída!
+[2023-11-24T16:46:17.592+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220566 do mês 11 adicionado!
+[2023-11-24T16:46:19.649+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220567 do mês 11 extraída!
+[2023-11-24T16:46:19.654+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220567 do mês 11 adicionado!
+[2023-11-24T16:46:21.675+0000] {logging_mixin.py:154} INFO - Despesas do deputado 132504 do mês 11 extraída!
+[2023-11-24T16:46:21.679+0000] {logging_mixin.py:154} INFO - Lote de despesas de 132504 do mês 11 adicionado!
+[2023-11-24T16:46:23.765+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220568 do mês 11 extraída!
+[2023-11-24T16:46:23.768+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220568 do mês 11 adicionado!
+[2023-11-24T16:46:25.818+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220570 do mês 11 extraída!
+[2023-11-24T16:46:25.822+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220570 do mês 11 adicionado!
+[2023-11-24T16:46:27.850+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220571 do mês 11 extraída!
+[2023-11-24T16:46:27.853+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220571 do mês 11 adicionado!
+[2023-11-24T16:46:29.923+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220572 do mês 11 extraída!
+[2023-11-24T16:46:29.928+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220572 do mês 11 adicionado!
+[2023-11-24T16:46:31.974+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220573 do mês 11 extraída!
+[2023-11-24T16:46:31.982+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220573 do mês 11 adicionado!
+[2023-11-24T16:46:34.035+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220574 do mês 11 extraída!
+[2023-11-24T16:46:34.040+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220574 do mês 11 adicionado!
+[2023-11-24T16:46:36.110+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220569 do mês 11 extraída!
+[2023-11-24T16:46:36.113+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220569 do mês 11 adicionado!
+[2023-11-24T16:46:38.194+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220576 do mês 11 extraída!
+[2023-11-24T16:46:38.198+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220576 do mês 11 adicionado!
+[2023-11-24T16:46:40.256+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220577 do mês 11 extraída!
+[2023-11-24T16:46:40.261+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220577 do mês 11 adicionado!
+[2023-11-24T16:46:42.344+0000] {logging_mixin.py:154} INFO - Despesas do deputado 62881 do mês 11 extraída!
+[2023-11-24T16:46:42.347+0000] {logging_mixin.py:154} INFO - Lote de despesas de 62881 do mês 11 adicionado!
+[2023-11-24T16:46:44.418+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220578 do mês 11 extraída!
+[2023-11-24T16:46:44.422+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220578 do mês 11 adicionado!
+[2023-11-24T16:46:46.479+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220580 do mês 11 extraída!
+[2023-11-24T16:46:46.483+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220580 do mês 11 adicionado!
+[2023-11-24T16:46:48.574+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220581 do mês 11 extraída!
+[2023-11-24T16:46:48.582+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220581 do mês 11 adicionado!
+[2023-11-24T16:46:50.654+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220582 do mês 11 extraída!
+[2023-11-24T16:46:50.658+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220582 do mês 11 adicionado!
+[2023-11-24T16:46:52.713+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220583 do mês 11 extraída!
+[2023-11-24T16:46:52.717+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220583 do mês 11 adicionado!
+[2023-11-24T16:46:54.751+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220584 do mês 11 extraída!
+[2023-11-24T16:46:54.755+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220584 do mês 11 adicionado!
+[2023-11-24T16:46:56.825+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220626 do mês 11 extraída!
+[2023-11-24T16:46:56.833+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220626 do mês 11 adicionado!
+[2023-11-24T16:46:58.877+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220585 do mês 11 extraída!
+[2023-11-24T16:46:58.881+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220585 do mês 11 adicionado!
+[2023-11-24T16:47:00.980+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220586 do mês 11 extraída!
+[2023-11-24T16:47:00.988+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220586 do mês 11 adicionado!
+[2023-11-24T16:47:03.046+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220587 do mês 11 extraída!
+[2023-11-24T16:47:03.053+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220587 do mês 11 adicionado!
+[2023-11-24T16:47:05.171+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220588 do mês 11 extraída!
+[2023-11-24T16:47:05.178+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220588 do mês 11 adicionado!
+[2023-11-24T16:47:07.272+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220589 do mês 11 extraída!
+[2023-11-24T16:47:07.276+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220589 do mês 11 adicionado!
+[2023-11-24T16:47:09.297+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220590 do mês 11 extraída!
+[2023-11-24T16:47:09.301+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220590 do mês 11 adicionado!
+[2023-11-24T16:47:11.356+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220591 do mês 11 extraída!
+[2023-11-24T16:47:11.362+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220591 do mês 11 adicionado!
+[2023-11-24T16:47:13.381+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220592 do mês 11 extraída!
+[2023-11-24T16:47:13.385+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220592 do mês 11 adicionado!
+[2023-11-24T16:47:15.421+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220593 do mês 11 extraída!
+[2023-11-24T16:47:15.425+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220593 do mês 11 adicionado!
+[2023-11-24T16:47:17.486+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220594 do mês 11 extraída!
+[2023-11-24T16:47:17.492+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220594 do mês 11 adicionado!
+[2023-11-24T16:47:19.601+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220595 do mês 11 extraída!
+[2023-11-24T16:47:19.612+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220595 do mês 11 adicionado!
+[2023-11-24T16:47:21.682+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220596 do mês 11 extraída!
+[2023-11-24T16:47:21.686+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220596 do mês 11 adicionado!
+[2023-11-24T16:47:23.773+0000] {logging_mixin.py:154} INFO - Despesas do deputado 191923 do mês 11 extraída!
+[2023-11-24T16:47:23.776+0000] {logging_mixin.py:154} INFO - Lote de despesas de 191923 do mês 11 adicionado!
+[2023-11-24T16:47:25.843+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220598 do mês 11 extraída!
+[2023-11-24T16:47:25.847+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220598 do mês 11 adicionado!
+[2023-11-24T16:47:27.898+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220599 do mês 11 extraída!
+[2023-11-24T16:47:27.902+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220599 do mês 11 adicionado!
+[2023-11-24T16:47:29.973+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220600 do mês 11 extraída!
+[2023-11-24T16:47:29.977+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220600 do mês 11 adicionado!
+[2023-11-24T16:47:32.027+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220597 do mês 11 extraída!
+[2023-11-24T16:47:32.031+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220597 do mês 11 adicionado!
+[2023-11-24T16:47:34.120+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220602 do mês 11 extraída!
+[2023-11-24T16:47:34.135+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220602 do mês 11 adicionado!
+[2023-11-24T16:47:36.196+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220603 do mês 11 extraída!
+[2023-11-24T16:47:36.200+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220603 do mês 11 adicionado!
+[2023-11-24T16:47:38.273+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220604 do mês 11 extraída!
+[2023-11-24T16:47:38.277+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220604 do mês 11 adicionado!
+[2023-11-24T16:47:40.348+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220605 do mês 11 extraída!
+[2023-11-24T16:47:40.351+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220605 do mês 11 adicionado!
+[2023-11-24T16:47:42.389+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220606 do mês 11 extraída!
+[2023-11-24T16:47:42.399+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220606 do mês 11 adicionado!
+[2023-11-24T16:47:44.458+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220693 do mês 11 extraída!
+[2023-11-24T16:47:44.469+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220693 do mês 11 adicionado!
+[2023-11-24T16:47:46.506+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220607 do mês 11 extraída!
+[2023-11-24T16:47:46.516+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220607 do mês 11 adicionado!
+[2023-11-24T16:47:48.694+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220608 do mês 11 extraída!
+[2023-11-24T16:47:48.701+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220608 do mês 11 adicionado!
+[2023-11-24T16:47:50.762+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220609 do mês 11 extraída!
+[2023-11-24T16:47:50.770+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220609 do mês 11 adicionado!
+[2023-11-24T16:47:52.847+0000] {logging_mixin.py:154} INFO - Despesas do deputado 107970 do mês 11 extraída!
+[2023-11-24T16:47:52.855+0000] {logging_mixin.py:154} INFO - Lote de despesas de 107970 do mês 11 adicionado!
+[2023-11-24T16:47:55.038+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220610 do mês 11 extraída!
+[2023-11-24T16:47:55.041+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220610 do mês 11 adicionado!
+[2023-11-24T16:47:57.098+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220612 do mês 11 extraída!
+[2023-11-24T16:47:57.102+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220612 do mês 11 adicionado!
+[2023-11-24T16:47:59.156+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220611 do mês 11 extraída!
+[2023-11-24T16:47:59.165+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220611 do mês 11 adicionado!
+[2023-11-24T16:48:01.262+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220614 do mês 11 extraída!
+[2023-11-24T16:48:01.273+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220614 do mês 11 adicionado!
+[2023-11-24T16:48:03.316+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220615 do mês 11 extraída!
+[2023-11-24T16:48:03.319+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220615 do mês 11 adicionado!
+[2023-11-24T16:48:05.345+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220616 do mês 11 extraída!
+[2023-11-24T16:48:05.349+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220616 do mês 11 adicionado!
+[2023-11-24T16:48:07.412+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220617 do mês 11 extraída!
+[2023-11-24T16:48:07.418+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220617 do mês 11 adicionado!
+[2023-11-24T16:48:09.446+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220613 do mês 11 extraída!
+[2023-11-24T16:48:09.449+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220613 do mês 11 adicionado!
+[2023-11-24T16:48:11.561+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220619 do mês 11 extraída!
+[2023-11-24T16:48:11.567+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220619 do mês 11 adicionado!
+[2023-11-24T16:48:13.628+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220620 do mês 11 extraída!
+[2023-11-24T16:48:13.633+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220620 do mês 11 adicionado!
+[2023-11-24T16:48:15.877+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220621 do mês 11 extraída!
+[2023-11-24T16:48:15.883+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220621 do mês 11 adicionado!
+[2023-11-24T16:48:17.926+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220622 do mês 11 extraída!
+[2023-11-24T16:48:17.930+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220622 do mês 11 adicionado!
+[2023-11-24T16:48:19.985+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220623 do mês 11 extraída!
+[2023-11-24T16:48:19.988+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220623 do mês 11 adicionado!
+[2023-11-24T16:48:22.058+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220624 do mês 11 extraída!
+[2023-11-24T16:48:22.063+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220624 do mês 11 adicionado!
+[2023-11-24T16:48:24.189+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220625 do mês 11 extraída!
+[2023-11-24T16:48:24.195+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220625 do mês 11 adicionado!
+[2023-11-24T16:48:26.258+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220627 do mês 11 extraída!
+[2023-11-24T16:48:26.262+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220627 do mês 11 adicionado!
+[2023-11-24T16:48:28.327+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220628 do mês 11 extraída!
+[2023-11-24T16:48:28.330+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220628 do mês 11 adicionado!
+[2023-11-24T16:48:30.387+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220629 do mês 11 extraída!
+[2023-11-24T16:48:30.391+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220629 do mês 11 adicionado!
+[2023-11-24T16:48:32.436+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220630 do mês 11 extraída!
+[2023-11-24T16:48:32.439+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220630 do mês 11 adicionado!
+[2023-11-24T16:48:34.473+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220656 do mês 11 extraída!
+[2023-11-24T16:48:34.476+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220656 do mês 11 adicionado!
+[2023-11-24T16:48:36.544+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220631 do mês 11 extraída!
+[2023-11-24T16:48:36.548+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220631 do mês 11 adicionado!
+[2023-11-24T16:48:38.626+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220632 do mês 11 extraída!
+[2023-11-24T16:48:38.631+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220632 do mês 11 adicionado!
+[2023-11-24T16:48:40.668+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220633 do mês 11 extraída!
+[2023-11-24T16:48:40.671+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220633 do mês 11 adicionado!
+[2023-11-24T16:48:42.733+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220634 do mês 11 extraída!
+[2023-11-24T16:48:42.737+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220634 do mês 11 adicionado!
+[2023-11-24T16:48:44.769+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220635 do mês 11 extraída!
+[2023-11-24T16:48:44.774+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220635 do mês 11 adicionado!
+[2023-11-24T16:48:46.818+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220636 do mês 11 extraída!
+[2023-11-24T16:48:46.831+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220636 do mês 11 adicionado!
+[2023-11-24T16:48:48.916+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220637 do mês 11 extraída!
+[2023-11-24T16:48:48.933+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220637 do mês 11 adicionado!
+[2023-11-24T16:48:50.956+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220638 do mês 11 extraída!
+[2023-11-24T16:48:50.962+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220638 do mês 11 adicionado!
+[2023-11-24T16:48:53.105+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220639 do mês 11 extraída!
+[2023-11-24T16:48:53.112+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220639 do mês 11 adicionado!
+[2023-11-24T16:48:55.163+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220640 do mês 11 extraída!
+[2023-11-24T16:48:55.166+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220640 do mês 11 adicionado!
+[2023-11-24T16:48:57.250+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220641 do mês 11 extraída!
+[2023-11-24T16:48:57.256+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220641 do mês 11 adicionado!
+[2023-11-24T16:48:59.308+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220642 do mês 11 extraída!
+[2023-11-24T16:48:59.312+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220642 do mês 11 adicionado!
+[2023-11-24T16:49:02.340+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220643 do mês 11 extraída!
+[2023-11-24T16:49:02.344+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220643 do mês 11 adicionado!
+[2023-11-24T16:49:04.423+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220644 do mês 11 extraída!
+[2023-11-24T16:49:04.427+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220644 do mês 11 adicionado!
+[2023-11-24T16:49:06.459+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220645 do mês 11 extraída!
+[2023-11-24T16:49:06.463+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220645 do mês 11 adicionado!
+[2023-11-24T16:49:08.503+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220646 do mês 11 extraída!
+[2023-11-24T16:49:08.506+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220646 do mês 11 adicionado!
+[2023-11-24T16:49:10.519+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220647 do mês 11 extraída!
+[2023-11-24T16:49:10.524+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220647 do mês 11 adicionado!
+[2023-11-24T16:49:12.652+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220648 do mês 11 extraída!
+[2023-11-24T16:49:12.660+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220648 do mês 11 adicionado!
+[2023-11-24T16:49:14.704+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220649 do mês 11 extraída!
+[2023-11-24T16:49:14.708+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220649 do mês 11 adicionado!
+[2023-11-24T16:49:16.750+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220650 do mês 11 extraída!
+[2023-11-24T16:49:16.753+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220650 do mês 11 adicionado!
+[2023-11-24T16:49:18.817+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220651 do mês 11 extraída!
+[2023-11-24T16:49:18.828+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220651 do mês 11 adicionado!
+[2023-11-24T16:49:20.923+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220652 do mês 11 extraída!
+[2023-11-24T16:49:20.932+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220652 do mês 11 adicionado!
+[2023-11-24T16:49:23.011+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220653 do mês 11 extraída!
+[2023-11-24T16:49:23.017+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220653 do mês 11 adicionado!
+[2023-11-24T16:49:25.062+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220654 do mês 11 extraída!
+[2023-11-24T16:49:25.066+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220654 do mês 11 adicionado!
+[2023-11-24T16:49:27.166+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220655 do mês 11 extraída!
+[2023-11-24T16:49:27.175+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220655 do mês 11 adicionado!
+[2023-11-24T16:49:29.281+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220657 do mês 11 extraída!
+[2023-11-24T16:49:29.289+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220657 do mês 11 adicionado!
+[2023-11-24T16:49:31.368+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220658 do mês 11 extraída!
+[2023-11-24T16:49:31.372+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220658 do mês 11 adicionado!
+[2023-11-24T16:49:33.428+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220659 do mês 11 extraída!
+[2023-11-24T16:49:33.432+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220659 do mês 11 adicionado!
+[2023-11-24T16:49:35.460+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220660 do mês 11 extraída!
+[2023-11-24T16:49:35.465+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220660 do mês 11 adicionado!
+[2023-11-24T16:49:37.516+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220661 do mês 11 extraída!
+[2023-11-24T16:49:37.519+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220661 do mês 11 adicionado!
+[2023-11-24T16:49:39.573+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220662 do mês 11 extraída!
+[2023-11-24T16:49:39.577+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220662 do mês 11 adicionado!
+[2023-11-24T16:49:41.647+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220663 do mês 11 extraída!
+[2023-11-24T16:49:41.651+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220663 do mês 11 adicionado!
+[2023-11-24T16:49:43.735+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220664 do mês 11 extraída!
+[2023-11-24T16:49:43.738+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220664 do mês 11 adicionado!
+[2023-11-24T16:49:45.805+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220665 do mês 11 extraída!
+[2023-11-24T16:49:45.809+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220665 do mês 11 adicionado!
+[2023-11-24T16:49:47.861+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220666 do mês 11 extraída!
+[2023-11-24T16:49:47.866+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220666 do mês 11 adicionado!
+[2023-11-24T16:49:49.912+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220667 do mês 11 extraída!
+[2023-11-24T16:49:49.916+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220667 do mês 11 adicionado!
+[2023-11-24T16:49:52.004+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220668 do mês 11 extraída!
+[2023-11-24T16:49:52.008+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220668 do mês 11 adicionado!
+[2023-11-24T16:49:54.083+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220669 do mês 11 extraída!
+[2023-11-24T16:49:54.086+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220669 do mês 11 adicionado!
+[2023-11-24T16:49:56.145+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220670 do mês 11 extraída!
+[2023-11-24T16:49:56.149+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220670 do mês 11 adicionado!
+[2023-11-24T16:49:58.192+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220671 do mês 11 extraída!
+[2023-11-24T16:49:58.198+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220671 do mês 11 adicionado!
+[2023-11-24T16:50:00.242+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220672 do mês 11 extraída!
+[2023-11-24T16:50:00.246+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220672 do mês 11 adicionado!
+[2023-11-24T16:50:02.262+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220673 do mês 11 extraída!
+[2023-11-24T16:50:02.265+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220673 do mês 11 adicionado!
+[2023-11-24T16:50:04.315+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220674 do mês 11 extraída!
+[2023-11-24T16:50:04.320+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220674 do mês 11 adicionado!
+[2023-11-24T16:50:06.354+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220675 do mês 11 extraída!
+[2023-11-24T16:50:06.358+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220675 do mês 11 adicionado!
+[2023-11-24T16:50:08.427+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220676 do mês 11 extraída!
+[2023-11-24T16:50:08.434+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220676 do mês 11 adicionado!
+[2023-11-24T16:50:10.496+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220677 do mês 11 extraída!
+[2023-11-24T16:50:10.499+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220677 do mês 11 adicionado!
+[2023-11-24T16:50:12.561+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220681 do mês 11 extraída!
+[2023-11-24T16:50:12.564+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220681 do mês 11 adicionado!
+[2023-11-24T16:50:14.620+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220682 do mês 11 extraída!
+[2023-11-24T16:50:14.625+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220682 do mês 11 adicionado!
+[2023-11-24T16:50:16.657+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220683 do mês 11 extraída!
+[2023-11-24T16:50:16.662+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220683 do mês 11 adicionado!
+[2023-11-24T16:50:18.841+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220684 do mês 11 extraída!
+[2023-11-24T16:50:18.844+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220684 do mês 11 adicionado!
+[2023-11-24T16:50:20.887+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220685 do mês 11 extraída!
+[2023-11-24T16:50:20.893+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220685 do mês 11 adicionado!
+[2023-11-24T16:50:22.962+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220686 do mês 11 extraída!
+[2023-11-24T16:50:22.966+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220686 do mês 11 adicionado!
+[2023-11-24T16:50:25.008+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220687 do mês 11 extraída!
+[2023-11-24T16:50:25.013+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220687 do mês 11 adicionado!
+[2023-11-24T16:50:27.058+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220688 do mês 11 extraída!
+[2023-11-24T16:50:27.062+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220688 do mês 11 adicionado!
+[2023-11-24T16:50:29.111+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220689 do mês 11 extraída!
+[2023-11-24T16:50:29.117+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220689 do mês 11 adicionado!
+[2023-11-24T16:50:31.218+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220690 do mês 11 extraída!
+[2023-11-24T16:50:31.223+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220690 do mês 11 adicionado!
+[2023-11-24T16:50:33.288+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220691 do mês 11 extraída!
+[2023-11-24T16:50:33.293+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220691 do mês 11 adicionado!
+[2023-11-24T16:50:35.326+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220692 do mês 11 extraída!
+[2023-11-24T16:50:35.330+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220692 do mês 11 adicionado!
+[2023-11-24T16:50:37.375+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220694 do mês 11 extraída!
+[2023-11-24T16:50:37.379+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220694 do mês 11 adicionado!
+[2023-11-24T16:50:39.408+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220695 do mês 11 extraída!
+[2023-11-24T16:50:39.412+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220695 do mês 11 adicionado!
+[2023-11-24T16:50:41.455+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220696 do mês 11 extraída!
+[2023-11-24T16:50:41.462+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220696 do mês 11 adicionado!
+[2023-11-24T16:50:43.512+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220697 do mês 11 extraída!
+[2023-11-24T16:50:43.516+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220697 do mês 11 adicionado!
+[2023-11-24T16:50:45.557+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220698 do mês 11 extraída!
+[2023-11-24T16:50:45.561+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220698 do mês 11 adicionado!
+[2023-11-24T16:50:47.637+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220699 do mês 11 extraída!
+[2023-11-24T16:50:47.641+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220699 do mês 11 adicionado!
+[2023-11-24T16:50:49.665+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220700 do mês 11 extraída!
+[2023-11-24T16:50:49.672+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220700 do mês 11 adicionado!
+[2023-11-24T16:50:51.710+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220701 do mês 11 extraída!
+[2023-11-24T16:50:51.714+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220701 do mês 11 adicionado!
+[2023-11-24T16:50:53.751+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220702 do mês 11 extraída!
+[2023-11-24T16:50:53.755+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220702 do mês 11 adicionado!
+[2023-11-24T16:50:55.844+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220703 do mês 11 extraída!
+[2023-11-24T16:50:55.847+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220703 do mês 11 adicionado!
+[2023-11-24T16:50:57.907+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220704 do mês 11 extraída!
+[2023-11-24T16:50:57.912+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220704 do mês 11 adicionado!
+[2023-11-24T16:50:59.991+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220705 do mês 11 extraída!
+[2023-11-24T16:50:59.997+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220705 do mês 11 adicionado!
+[2023-11-24T16:51:02.098+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220706 do mês 11 extraída!
+[2023-11-24T16:51:02.102+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220706 do mês 11 adicionado!
+[2023-11-24T16:51:04.205+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220707 do mês 11 extraída!
+[2023-11-24T16:51:04.216+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220707 do mês 11 adicionado!
+[2023-11-24T16:51:06.336+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220708 do mês 11 extraída!
+[2023-11-24T16:51:06.340+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220708 do mês 11 adicionado!
+[2023-11-24T16:51:08.405+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220712 do mês 11 extraída!
+[2023-11-24T16:51:08.414+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220712 do mês 11 adicionado!
+[2023-11-24T16:51:10.446+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220713 do mês 11 extraída!
+[2023-11-24T16:51:10.450+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220713 do mês 11 adicionado!
+[2023-11-24T16:51:12.494+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220714 do mês 11 extraída!
+[2023-11-24T16:51:12.497+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220714 do mês 11 adicionado!
+[2023-11-24T16:51:14.571+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220715 do mês 11 extraída!
+[2023-11-24T16:51:14.575+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220715 do mês 11 adicionado!
+[2023-11-24T16:51:16.644+0000] {logging_mixin.py:154} INFO - Despesas do deputado 198197 do mês 11 extraída!
+[2023-11-24T16:51:16.656+0000] {logging_mixin.py:154} INFO - Lote de despesas de 198197 do mês 11 adicionado!
+[2023-11-24T16:51:18.694+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204351 do mês 11 extraída!
+[2023-11-24T16:51:18.697+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204351 do mês 11 adicionado!
+[2023-11-24T16:51:20.728+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204355 do mês 11 extraída!
+[2023-11-24T16:51:20.732+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204355 do mês 11 adicionado!
+[2023-11-24T16:51:22.790+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204356 do mês 11 extraída!
+[2023-11-24T16:51:22.797+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204356 do mês 11 adicionado!
+[2023-11-24T16:51:24.833+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204358 do mês 11 extraída!
+[2023-11-24T16:51:24.836+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204358 do mês 11 adicionado!
+[2023-11-24T16:51:26.869+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204360 do mês 11 extraída!
+[2023-11-24T16:51:26.877+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204360 do mês 11 adicionado!
+[2023-11-24T16:51:28.968+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204361 do mês 11 extraída!
+[2023-11-24T16:51:28.974+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204361 do mês 11 adicionado!
+[2023-11-24T16:51:30.994+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204362 do mês 11 extraída!
+[2023-11-24T16:51:30.999+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204362 do mês 11 adicionado!
+[2023-11-24T16:51:33.040+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204364 do mês 11 extraída!
+[2023-11-24T16:51:33.044+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204364 do mês 11 adicionado!
+[2023-11-24T16:51:35.119+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204365 do mês 11 extraída!
+[2023-11-24T16:51:35.127+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204365 do mês 11 adicionado!
+[2023-11-24T16:51:37.188+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204367 do mês 11 extraída!
+[2023-11-24T16:51:37.198+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204367 do mês 11 adicionado!
+[2023-11-24T16:51:39.287+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204368 do mês 11 extraída!
+[2023-11-24T16:51:39.291+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204368 do mês 11 adicionado!
+[2023-11-24T16:51:41.372+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204369 do mês 11 extraída!
+[2023-11-24T16:51:41.383+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204369 do mês 11 adicionado!
+[2023-11-24T16:51:43.422+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204372 do mês 11 extraída!
+[2023-11-24T16:51:43.426+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204372 do mês 11 adicionado!
+[2023-11-24T16:51:45.454+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204374 do mês 11 extraída!
+[2023-11-24T16:51:45.457+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204374 do mês 11 adicionado!
+[2023-11-24T16:51:47.535+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204378 do mês 11 extraída!
+[2023-11-24T16:51:47.543+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204378 do mês 11 adicionado!
+[2023-11-24T16:51:49.590+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204379 do mês 11 extraída!
+[2023-11-24T16:51:49.594+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204379 do mês 11 adicionado!
+[2023-11-24T16:51:51.633+0000] {logging_mixin.py:154} INFO - Despesas do deputado 165470 do mês 11 extraída!
+[2023-11-24T16:51:51.638+0000] {logging_mixin.py:154} INFO - Lote de despesas de 165470 do mês 11 adicionado!
+[2023-11-24T16:51:53.712+0000] {logging_mixin.py:154} INFO - Despesas do deputado 171617 do mês 11 extraída!
+[2023-11-24T16:51:53.724+0000] {logging_mixin.py:154} INFO - Lote de despesas de 171617 do mês 11 adicionado!
+[2023-11-24T16:51:55.786+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204387 do mês 11 extraída!
+[2023-11-24T16:51:55.796+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204387 do mês 11 adicionado!
+[2023-11-24T16:51:57.876+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204388 do mês 11 extraída!
+[2023-11-24T16:51:57.883+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204388 do mês 11 adicionado!
+[2023-11-24T16:51:59.982+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204390 do mês 11 extraída!
+[2023-11-24T16:51:59.996+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204390 do mês 11 adicionado!
+[2023-11-24T16:52:02.094+0000] {logging_mixin.py:154} INFO - Despesas do deputado 171623 do mês 11 extraída!
+[2023-11-24T16:52:02.102+0000] {logging_mixin.py:154} INFO - Lote de despesas de 171623 do mês 11 adicionado!
+[2023-11-24T16:52:04.196+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204391 do mês 11 extraída!
+[2023-11-24T16:52:04.203+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204391 do mês 11 adicionado!
+[2023-11-24T16:52:06.270+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204394 do mês 11 extraída!
+[2023-11-24T16:52:06.275+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204394 do mês 11 adicionado!
+[2023-11-24T16:52:08.335+0000] {logging_mixin.py:154} INFO - Despesas do deputado 136811 do mês 11 extraída!
+[2023-11-24T16:52:08.338+0000] {logging_mixin.py:154} INFO - Lote de despesas de 136811 do mês 11 adicionado!
+[2023-11-24T16:52:10.421+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204395 do mês 11 extraída!
+[2023-11-24T16:52:10.436+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204395 do mês 11 adicionado!
+[2023-11-24T16:52:12.536+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204396 do mês 11 extraída!
+[2023-11-24T16:52:12.539+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204396 do mês 11 adicionado!
+[2023-11-24T16:52:14.612+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204398 do mês 11 extraída!
+[2023-11-24T16:52:14.616+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204398 do mês 11 adicionado!
+[2023-11-24T16:52:16.663+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204404 do mês 11 extraída!
+[2023-11-24T16:52:16.667+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204404 do mês 11 adicionado!
+[2023-11-24T16:52:18.683+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204406 do mês 11 extraída!
+[2023-11-24T16:52:18.687+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204406 do mês 11 adicionado!
+[2023-11-24T16:52:20.829+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204407 do mês 11 extraída!
+[2023-11-24T16:52:20.835+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204407 do mês 11 adicionado!
+[2023-11-24T16:52:22.881+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204408 do mês 11 extraída!
+[2023-11-24T16:52:22.887+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204408 do mês 11 adicionado!
+[2023-11-24T16:52:24.976+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204409 do mês 11 extraída!
+[2023-11-24T16:52:24.983+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204409 do mês 11 adicionado!
+[2023-11-24T16:52:27.032+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204410 do mês 11 extraída!
+[2023-11-24T16:52:27.036+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204410 do mês 11 adicionado!
+[2023-11-24T16:52:29.096+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204411 do mês 11 extraída!
+[2023-11-24T16:52:29.106+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204411 do mês 11 adicionado!
+[2023-11-24T16:52:31.174+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204412 do mês 11 extraída!
+[2023-11-24T16:52:31.178+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204412 do mês 11 adicionado!
+[2023-11-24T16:52:33.230+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204481 do mês 11 extraída!
+[2023-11-24T16:52:33.236+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204481 do mês 11 adicionado!
+[2023-11-24T16:52:35.313+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204416 do mês 11 extraída!
+[2023-11-24T16:52:35.321+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204416 do mês 11 adicionado!
+[2023-11-24T16:52:37.394+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204419 do mês 11 extraída!
+[2023-11-24T16:52:37.400+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204419 do mês 11 adicionado!
+[2023-11-24T16:52:39.496+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204422 do mês 11 extraída!
+[2023-11-24T16:52:39.504+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204422 do mês 11 adicionado!
+[2023-11-24T16:52:41.613+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204423 do mês 11 extraída!
+[2023-11-24T16:52:41.621+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204423 do mês 11 adicionado!
+[2023-11-24T16:52:43.670+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204425 do mês 11 extraída!
+[2023-11-24T16:52:43.675+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204425 do mês 11 adicionado!
+[2023-11-24T16:52:45.757+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204426 do mês 11 extraída!
+[2023-11-24T16:52:45.762+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204426 do mês 11 adicionado!
+[2023-11-24T16:52:47.817+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204427 do mês 11 extraída!
+[2023-11-24T16:52:47.822+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204427 do mês 11 adicionado!
+[2023-11-24T16:52:49.889+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204431 do mês 11 extraída!
+[2023-11-24T16:52:49.898+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204431 do mês 11 adicionado!
+[2023-11-24T16:52:51.933+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204433 do mês 11 extraída!
+[2023-11-24T16:52:51.945+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204433 do mês 11 adicionado!
+[2023-11-24T16:52:53.965+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204436 do mês 11 extraída!
+[2023-11-24T16:52:53.969+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204436 do mês 11 adicionado!
+[2023-11-24T16:52:56.018+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204441 do mês 11 extraída!
+[2023-11-24T16:52:56.023+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204441 do mês 11 adicionado!
+[2023-11-24T16:52:58.067+0000] {logging_mixin.py:154} INFO - Despesas do deputado 116379 do mês 11 extraída!
+[2023-11-24T16:52:58.071+0000] {logging_mixin.py:154} INFO - Lote de despesas de 116379 do mês 11 adicionado!
+[2023-11-24T16:53:00.146+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204444 do mês 11 extraída!
+[2023-11-24T16:53:00.149+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204444 do mês 11 adicionado!
+[2023-11-24T16:53:02.187+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204445 do mês 11 extraída!
+[2023-11-24T16:53:02.192+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204445 do mês 11 adicionado!
+[2023-11-24T16:53:04.239+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204448 do mês 11 extraída!
+[2023-11-24T16:53:04.244+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204448 do mês 11 adicionado!
+[2023-11-24T16:53:06.257+0000] {logging_mixin.py:154} INFO - Despesas do deputado 161440 do mês 11 extraída!
+[2023-11-24T16:53:06.263+0000] {logging_mixin.py:154} INFO - Lote de despesas de 161440 do mês 11 adicionado!
+[2023-11-24T16:53:08.303+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204482 do mês 11 extraída!
+[2023-11-24T16:53:08.308+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204482 do mês 11 adicionado!
+[2023-11-24T16:53:10.339+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204450 do mês 11 extraída!
+[2023-11-24T16:53:10.343+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204450 do mês 11 adicionado!
+[2023-11-24T16:53:12.377+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204453 do mês 11 extraída!
+[2023-11-24T16:53:12.384+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204453 do mês 11 adicionado!
+[2023-11-24T16:53:14.443+0000] {logging_mixin.py:154} INFO - Despesas do deputado 214694 do mês 11 extraída!
+[2023-11-24T16:53:14.448+0000] {logging_mixin.py:154} INFO - Lote de despesas de 214694 do mês 11 adicionado!
+[2023-11-24T16:53:16.503+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204455 do mês 11 extraída!
+[2023-11-24T16:53:16.506+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204455 do mês 11 adicionado!
+[2023-11-24T16:53:18.575+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204456 do mês 11 extraída!
+[2023-11-24T16:53:18.579+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204456 do mês 11 adicionado!
+[2023-11-24T16:53:20.665+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204457 do mês 11 extraída!
+[2023-11-24T16:53:20.671+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204457 do mês 11 adicionado!
+[2023-11-24T16:53:22.725+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204459 do mês 11 extraída!
+[2023-11-24T16:53:22.738+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204459 do mês 11 adicionado!
+[2023-11-24T16:53:24.814+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204460 do mês 11 extraída!
+[2023-11-24T16:53:24.823+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204460 do mês 11 adicionado!
+[2023-11-24T16:53:26.887+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204462 do mês 11 extraída!
+[2023-11-24T16:53:26.891+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204462 do mês 11 adicionado!
+[2023-11-24T16:53:28.989+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204464 do mês 11 extraída!
+[2023-11-24T16:53:28.996+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204464 do mês 11 adicionado!
+[2023-11-24T16:53:31.076+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204472 do mês 11 extraída!
+[2023-11-24T16:53:31.085+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204472 do mês 11 adicionado!
+[2023-11-24T16:53:33.144+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204473 do mês 11 extraída!
+[2023-11-24T16:53:33.158+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204473 do mês 11 adicionado!
+[2023-11-24T16:53:35.227+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204474 do mês 11 extraída!
+[2023-11-24T16:53:35.234+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204474 do mês 11 adicionado!
+[2023-11-24T16:53:37.262+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204476 do mês 11 extraída!
+[2023-11-24T16:53:37.266+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204476 do mês 11 adicionado!
+[2023-11-24T16:53:39.287+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204479 do mês 11 extraída!
+[2023-11-24T16:53:39.292+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204479 do mês 11 adicionado!
+[2023-11-24T16:53:41.389+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204480 do mês 11 extraída!
+[2023-11-24T16:53:41.403+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204480 do mês 11 adicionado!
+[2023-11-24T16:53:43.493+0000] {logging_mixin.py:154} INFO - Despesas do deputado 188097 do mês 11 extraída!
+[2023-11-24T16:53:43.501+0000] {logging_mixin.py:154} INFO - Lote de despesas de 188097 do mês 11 adicionado!
+[2023-11-24T16:53:45.559+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204485 do mês 11 extraída!
+[2023-11-24T16:53:45.564+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204485 do mês 11 adicionado!
+[2023-11-24T16:53:47.692+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204486 do mês 11 extraída!
+[2023-11-24T16:53:47.702+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204486 do mês 11 adicionado!
+[2023-11-24T16:53:49.781+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204488 do mês 11 extraída!
+[2023-11-24T16:53:49.784+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204488 do mês 11 adicionado!
+[2023-11-24T16:53:51.902+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204489 do mês 11 extraída!
+[2023-11-24T16:53:51.906+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204489 do mês 11 adicionado!
+[2023-11-24T16:53:54.002+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204491 do mês 11 extraída!
+[2023-11-24T16:53:54.007+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204491 do mês 11 adicionado!
+[2023-11-24T16:53:56.135+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204492 do mês 11 extraída!
+[2023-11-24T16:53:56.139+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204492 do mês 11 adicionado!
+[2023-11-24T16:53:58.248+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204494 do mês 11 extraída!
+[2023-11-24T16:53:58.253+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204494 do mês 11 adicionado!
+[2023-11-24T16:54:00.297+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204495 do mês 11 extraída!
+[2023-11-24T16:54:00.301+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204495 do mês 11 adicionado!
+[2023-11-24T16:54:02.320+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204496 do mês 11 extraída!
+[2023-11-24T16:54:02.325+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204496 do mês 11 adicionado!
+[2023-11-24T16:54:04.392+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204497 do mês 11 extraída!
+[2023-11-24T16:54:04.396+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204497 do mês 11 adicionado!
+[2023-11-24T16:54:06.465+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204498 do mês 11 extraída!
+[2023-11-24T16:54:06.469+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204498 do mês 11 adicionado!
+[2023-11-24T16:54:08.667+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220564 do mês 11 extraída!
+[2023-11-24T16:54:08.678+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220564 do mês 11 adicionado!
+[2023-11-24T16:54:10.732+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204501 do mês 11 extraída!
+[2023-11-24T16:54:10.741+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204501 do mês 11 adicionado!
+[2023-11-24T16:54:12.775+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204503 do mês 11 extraída!
+[2023-11-24T16:54:12.791+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204503 do mês 11 adicionado!
+[2023-11-24T16:54:14.807+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204504 do mês 11 extraída!
+[2023-11-24T16:54:14.811+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204504 do mês 11 adicionado!
+[2023-11-24T16:54:16.855+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73433 do mês 11 extraída!
+[2023-11-24T16:54:16.870+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73433 do mês 11 adicionado!
+[2023-11-24T16:54:18.938+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204506 do mês 11 extraída!
+[2023-11-24T16:54:18.941+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204506 do mês 11 adicionado!
+[2023-11-24T16:54:20.992+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204507 do mês 11 extraída!
+[2023-11-24T16:54:21.004+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204507 do mês 11 adicionado!
+[2023-11-24T16:54:23.058+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204508 do mês 11 extraída!
+[2023-11-24T16:54:23.062+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204508 do mês 11 adicionado!
+[2023-11-24T16:54:25.125+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204511 do mês 11 extraída!
+[2023-11-24T16:54:25.129+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204511 do mês 11 adicionado!
+[2023-11-24T16:54:27.176+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204512 do mês 11 extraída!
+[2023-11-24T16:54:27.185+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204512 do mês 11 adicionado!
+[2023-11-24T16:54:29.223+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73441 do mês 11 extraída!
+[2023-11-24T16:54:29.234+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73441 do mês 11 adicionado!
+[2023-11-24T16:54:31.293+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204515 do mês 11 extraída!
+[2023-11-24T16:54:31.296+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204515 do mês 11 adicionado!
+[2023-11-24T16:54:33.345+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204517 do mês 11 extraída!
+[2023-11-24T16:54:33.352+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204517 do mês 11 adicionado!
+[2023-11-24T16:54:35.388+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204518 do mês 11 extraída!
+[2023-11-24T16:54:35.391+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204518 do mês 11 adicionado!
+[2023-11-24T16:54:37.440+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204520 do mês 11 extraída!
+[2023-11-24T16:54:37.451+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204520 do mês 11 adicionado!
+[2023-11-24T16:54:39.494+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204522 do mês 11 extraída!
+[2023-11-24T16:54:39.507+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204522 do mês 11 adicionado!
+[2023-11-24T16:54:41.597+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204524 do mês 11 extraída!
+[2023-11-24T16:54:41.608+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204524 do mês 11 adicionado!
+[2023-11-24T16:54:43.655+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204525 do mês 11 extraída!
+[2023-11-24T16:54:43.666+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204525 do mês 11 adicionado!
+[2023-11-24T16:54:45.692+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204526 do mês 11 extraída!
+[2023-11-24T16:54:45.697+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204526 do mês 11 adicionado!
+[2023-11-24T16:54:47.731+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204528 do mês 11 extraída!
+[2023-11-24T16:54:47.736+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204528 do mês 11 adicionado!
+[2023-11-24T16:54:49.811+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204531 do mês 11 extraída!
+[2023-11-24T16:54:49.816+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204531 do mês 11 adicionado!
+[2023-11-24T16:54:51.895+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204533 do mês 11 extraída!
+[2023-11-24T16:54:51.911+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204533 do mês 11 adicionado!
+[2023-11-24T16:54:53.975+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204534 do mês 11 extraída!
+[2023-11-24T16:54:53.983+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204534 do mês 11 adicionado!
+[2023-11-24T16:54:56.036+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204535 do mês 11 extraída!
+[2023-11-24T16:54:56.041+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204535 do mês 11 adicionado!
+[2023-11-24T16:54:58.120+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204536 do mês 11 extraída!
+[2023-11-24T16:54:58.126+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204536 do mês 11 adicionado!
+[2023-11-24T16:55:00.181+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204539 do mês 11 extraída!
+[2023-11-24T16:55:00.193+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204539 do mês 11 adicionado!
+[2023-11-24T16:55:02.300+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204540 do mês 11 extraída!
+[2023-11-24T16:55:02.306+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204540 do mês 11 adicionado!
+[2023-11-24T16:55:04.397+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204541 do mês 11 extraída!
+[2023-11-24T16:55:04.402+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204541 do mês 11 adicionado!
+[2023-11-24T16:55:06.476+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204549 do mês 11 extraída!
+[2023-11-24T16:55:06.479+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204549 do mês 11 adicionado!
+[2023-11-24T16:55:08.575+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204550 do mês 11 extraída!
+[2023-11-24T16:55:08.579+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204550 do mês 11 adicionado!
+[2023-11-24T16:55:10.690+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220575 do mês 11 extraída!
+[2023-11-24T16:55:10.695+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220575 do mês 11 adicionado!
+[2023-11-24T16:55:12.781+0000] {logging_mixin.py:154} INFO - Despesas do deputado 98057 do mês 11 extraída!
+[2023-11-24T16:55:12.789+0000] {logging_mixin.py:154} INFO - Lote de despesas de 98057 do mês 11 adicionado!
+[2023-11-24T16:55:14.875+0000] {logging_mixin.py:154} INFO - Despesas do deputado 171786 do mês 11 extraída!
+[2023-11-24T16:55:14.879+0000] {logging_mixin.py:154} INFO - Lote de despesas de 171786 do mês 11 adicionado!
+[2023-11-24T16:55:16.930+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204553 do mês 11 extraída!
+[2023-11-24T16:55:16.943+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204553 do mês 11 adicionado!
+[2023-11-24T16:55:18.977+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204557 do mês 11 extraída!
+[2023-11-24T16:55:18.981+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204557 do mês 11 adicionado!
+[2023-11-24T16:55:21.032+0000] {logging_mixin.py:154} INFO - Despesas do deputado 161550 do mês 11 extraída!
+[2023-11-24T16:55:21.036+0000] {logging_mixin.py:154} INFO - Lote de despesas de 161550 do mês 11 adicionado!
+[2023-11-24T16:55:23.093+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73486 do mês 11 extraída!
+[2023-11-24T16:55:23.097+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73486 do mês 11 adicionado!
+[2023-11-24T16:55:25.123+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204560 do mês 11 extraída!
+[2023-11-24T16:55:25.135+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204560 do mês 11 adicionado!
+[2023-11-24T16:55:27.147+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204559 do mês 11 extraída!
+[2023-11-24T16:55:27.151+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204559 do mês 11 adicionado!
+[2023-11-24T16:55:29.224+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204563 do mês 11 extraída!
+[2023-11-24T16:55:29.228+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204563 do mês 11 adicionado!
+[2023-11-24T16:55:31.300+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204566 do mês 11 extraída!
+[2023-11-24T16:55:31.308+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204566 do mês 11 adicionado!
+[2023-11-24T16:55:33.375+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204567 do mês 11 extraída!
+[2023-11-24T16:55:33.380+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204567 do mês 11 adicionado!
+[2023-11-24T16:55:35.567+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204570 do mês 11 extraída!
+[2023-11-24T16:55:35.570+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204570 do mês 11 adicionado!
+[2023-11-24T16:55:37.641+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204571 do mês 11 extraída!
+[2023-11-24T16:55:37.656+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204571 do mês 11 adicionado!
+[2023-11-24T16:55:39.671+0000] {logging_mixin.py:154} INFO - Despesas do deputado 137070 do mês 11 extraída!
+[2023-11-24T16:55:39.674+0000] {logging_mixin.py:154} INFO - Lote de despesas de 137070 do mês 11 adicionado!
+[2023-11-24T16:55:41.738+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204572 do mês 11 extraída!
+[2023-11-24T16:55:41.744+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204572 do mês 11 adicionado!
+[2023-11-24T16:55:43.798+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204573 do mês 11 extraída!
+[2023-11-24T16:55:43.802+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204573 do mês 11 adicionado!
+[2023-11-24T16:55:45.803+0000] {logging_mixin.py:154} INFO - Despesas do deputado 204574 do mês 11 extraída!
+[2023-11-24T16:55:45.808+0000] {logging_mixin.py:154} INFO - Lote de despesas de 204574 do mês 11 adicionado!
+[2023-11-24T16:55:47.864+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220579 do mês 11 extraída!
+[2023-11-24T16:55:47.868+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220579 do mês 11 adicionado!
+[2023-11-24T16:55:49.894+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73531 do mês 11 extraída!
+[2023-11-24T16:55:49.897+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73531 do mês 11 adicionado!
+[2023-11-24T16:55:51.969+0000] {logging_mixin.py:154} INFO - Despesas do deputado 153423 do mês 11 extraída!
+[2023-11-24T16:55:51.981+0000] {logging_mixin.py:154} INFO - Lote de despesas de 153423 do mês 11 adicionado!
+[2023-11-24T16:55:54.030+0000] {logging_mixin.py:154} INFO - Despesas do deputado 98148 do mês 11 extraída!
+[2023-11-24T16:55:54.037+0000] {logging_mixin.py:154} INFO - Lote de despesas de 98148 do mês 11 adicionado!
+[2023-11-24T16:55:56.066+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73579 do mês 11 extraída!
+[2023-11-24T16:55:56.080+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73579 do mês 11 adicionado!
+[2023-11-24T16:55:58.131+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73604 do mês 11 extraída!
+[2023-11-24T16:55:58.136+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73604 do mês 11 adicionado!
+[2023-11-24T16:56:00.157+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220601 do mês 11 extraída!
+[2023-11-24T16:56:00.160+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220601 do mês 11 adicionado!
+[2023-11-24T16:56:02.206+0000] {logging_mixin.py:154} INFO - Despesas do deputado 223128 do mês 11 extraída!
+[2023-11-24T16:56:02.210+0000] {logging_mixin.py:154} INFO - Lote de despesas de 223128 do mês 11 adicionado!
+[2023-11-24T16:56:04.259+0000] {logging_mixin.py:154} INFO - Despesas do deputado 89536 do mês 11 extraída!
+[2023-11-24T16:56:04.269+0000] {logging_mixin.py:154} INFO - Lote de despesas de 89536 do mês 11 adicionado!
+[2023-11-24T16:56:06.310+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92102 do mês 11 extraída!
+[2023-11-24T16:56:06.319+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92102 do mês 11 adicionado!
+[2023-11-24T16:56:08.350+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221148 do mês 11 extraída!
+[2023-11-24T16:56:08.353+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221148 do mês 11 adicionado!
+[2023-11-24T16:56:10.380+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73692 do mês 11 extraída!
+[2023-11-24T16:56:10.384+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73692 do mês 11 adicionado!
+[2023-11-24T16:56:12.404+0000] {logging_mixin.py:154} INFO - Despesas do deputado 220618 do mês 11 extraída!
+[2023-11-24T16:56:12.408+0000] {logging_mixin.py:154} INFO - Lote de despesas de 220618 do mês 11 adicionado!
+[2023-11-24T16:56:14.469+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73701 do mês 11 extraída!
+[2023-11-24T16:56:14.475+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73701 do mês 11 adicionado!
+[2023-11-24T16:56:16.529+0000] {logging_mixin.py:154} INFO - Despesas do deputado 180214 do mês 11 extraída!
+[2023-11-24T16:56:16.534+0000] {logging_mixin.py:154} INFO - Lote de despesas de 180214 do mês 11 adicionado!
+[2023-11-24T16:56:17.705+0000] {logging_mixin.py:154} INFO - Dados de <Despesas> carregados em stg_despesas com sucesso!
+[2023-11-24T16:56:17.708+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-24T16:56:17.734+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_extract_despesas, task_id=task_extract_despesas, execution_date=20231124T161926, start_date=20231124T163702, end_date=20231124T165617
+[2023-11-24T16:56:17.916+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-24T16:56:17.956+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

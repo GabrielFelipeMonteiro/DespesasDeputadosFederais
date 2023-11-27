@@ -1,0 +1,22 @@
+[2023-11-24T16:56:20.435+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_get_despesas_stg scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T16:56:20.449+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_get_despesas_stg scheduled__2023-11-24T16:19:26.845351+00:00 [queued]>
+[2023-11-24T16:56:20.449+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-11-24T16:56:20.466+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_get_despesas_stg> on 2023-11-24 16:19:26.845351+00:00
+[2023-11-24T16:56:20.472+0000] {standard_task_runner.py:57} INFO - Started process 668 to run task
+[2023-11-24T16:56:20.475+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_get_despesas_stg', 'scheduled__2023-11-24T16:19:26.845351+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmpprtnmhxd']
+[2023-11-24T16:56:20.476+0000] {standard_task_runner.py:85} INFO - Job 55: Subtask task_get_despesas_stg
+[2023-11-24T16:56:20.519+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_get_despesas_stg scheduled__2023-11-24T16:19:26.845351+00:00 [running]> on host eea2b93d502c
+[2023-11-24T16:56:20.588+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_get_despesas_stg' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T16:19:26.845351+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-24T16:19:26.845351+00:00'
+[2023-11-24T16:56:23.854+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/etl.py", line 217, in getDespesaStg
+    df.write_parquet(tempfile.name)
+AttributeError: module 'tempfile' has no attribute 'name'
+[2023-11-24T16:56:23.869+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_extract_despesas, task_id=task_get_despesas_stg, execution_date=20231124T161926, start_date=20231124T165620, end_date=20231124T165623
+[2023-11-24T16:56:23.893+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 55 for task task_get_despesas_stg (module 'tempfile' has no attribute 'name'; 668)
+[2023-11-24T16:56:23.910+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T16:56:23.929+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

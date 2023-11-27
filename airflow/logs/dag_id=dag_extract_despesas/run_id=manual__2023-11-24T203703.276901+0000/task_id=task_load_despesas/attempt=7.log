@@ -1,0 +1,26 @@
+[2023-11-25T03:54:59.670+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_load_despesas manual__2023-11-24T20:37:03.276901+00:00 [queued]>
+[2023-11-25T03:54:59.678+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_load_despesas manual__2023-11-24T20:37:03.276901+00:00 [queued]>
+[2023-11-25T03:54:59.679+0000] {taskinstance.py:1361} INFO - Starting attempt 7 of 8
+[2023-11-25T03:54:59.695+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_load_despesas> on 2023-11-24 20:37:03.276901+00:00
+[2023-11-25T03:54:59.701+0000] {standard_task_runner.py:57} INFO - Started process 335 to run task
+[2023-11-25T03:54:59.704+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_load_despesas', 'manual__2023-11-24T20:37:03.276901+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmpxl9x8s31']
+[2023-11-25T03:54:59.705+0000] {standard_task_runner.py:85} INFO - Job 193: Subtask task_load_despesas
+[2023-11-25T03:54:59.751+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_load_despesas manual__2023-11-24T20:37:03.276901+00:00 [running]> on host 65d7bc470c88
+[2023-11-25T03:54:59.823+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_load_despesas' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T20:37:03.276901+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T20:37:03.276901+00:00'
+[2023-11-25T03:55:02.897+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/scripts/etl.py", line 274, in loadDespesasFinal
+    df = pl.read_parquet(temp_file_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/io/parquet/functions.py", line 131, in read_parquet
+    return pl.DataFrame._read_parquet(
+  File "/home/airflow/.local/lib/python3.8/site-packages/polars/dataframe/frame.py", line 862, in _read_parquet
+    self._df = PyDataFrame.read_parquet(
+FileNotFoundError: No such file or directory (os error 2): /tmp/tmpjehdb4ih
+[2023-11-25T03:55:02.916+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_extract_despesas, task_id=task_load_despesas, execution_date=20231124T203703, start_date=20231125T035459, end_date=20231125T035502
+[2023-11-25T03:55:02.952+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 193 for task task_load_despesas (No such file or directory (os error 2): /tmp/tmpjehdb4ih; 335)
+[2023-11-25T03:55:02.976+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T03:55:02.993+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

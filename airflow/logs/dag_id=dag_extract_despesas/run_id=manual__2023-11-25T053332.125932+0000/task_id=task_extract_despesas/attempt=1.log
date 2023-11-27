@@ -1,0 +1,668 @@
+[2023-11-25T05:40:24.811+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas manual__2023-11-25T05:33:32.125932+00:00 [queued]>
+[2023-11-25T05:40:24.828+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_despesas.task_extract_despesas manual__2023-11-25T05:33:32.125932+00:00 [queued]>
+[2023-11-25T05:40:24.829+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-11-25T05:40:24.852+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): task_extract_despesas> on 2023-11-25 05:33:32.125932+00:00
+[2023-11-25T05:40:24.861+0000] {standard_task_runner.py:57} INFO - Started process 61 to run task
+[2023-11-25T05:40:24.868+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_despesas', 'task_extract_despesas', 'manual__2023-11-25T05:33:32.125932+00:00', '--job-id', '222', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_despesas.py', '--cfg-path', '/tmp/tmpfm5rotmn']
+[2023-11-25T05:40:24.872+0000] {standard_task_runner.py:85} INFO - Job 222: Subtask task_extract_despesas
+[2023-11-25T05:40:24.996+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_extract_despesas.task_extract_despesas manual__2023-11-25T05:33:32.125932+00:00 [running]> on host 470eb128fd9e
+[2023-11-25T05:40:25.161+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_extract_despesas' AIRFLOW_CTX_TASK_ID='task_extract_despesas' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T05:33:32.125932+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-25T05:33:32.125932+00:00'
+[2023-11-25T05:40:27.334+0000] {logging_mixin.py:154} INFO - Despesas do deputado 215043 do mês 2 extraída!
+[2023-11-25T05:40:27.338+0000] {logging_mixin.py:154} INFO - Lote de despesas de 215043 do mês 2 adicionado!
+[2023-11-25T05:40:29.990+0000] {logging_mixin.py:154} INFO - Despesas do deputado 139285 do mês 2 extraída!
+[2023-11-25T05:40:30.005+0000] {logging_mixin.py:154} INFO - Lote de despesas de 139285 do mês 2 adicionado!
+[2023-11-25T05:40:32.054+0000] {logging_mixin.py:154} INFO - Despesas do deputado 157130 do mês 2 extraída!
+[2023-11-25T05:40:32.065+0000] {logging_mixin.py:154} INFO - Lote de despesas de 157130 do mês 2 adicionado!
+[2023-11-25T05:40:34.104+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73768 do mês 2 extraída!
+[2023-11-25T05:40:34.107+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73768 do mês 2 adicionado!
+[2023-11-25T05:40:36.166+0000] {logging_mixin.py:154} INFO - Despesas do deputado 210989 do mês 2 extraída!
+[2023-11-25T05:40:36.169+0000] {logging_mixin.py:154} INFO - Lote de despesas de 210989 do mês 2 adicionado!
+[2023-11-25T05:40:38.231+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73778 do mês 2 extraída!
+[2023-11-25T05:40:38.357+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73778 do mês 2 adicionado!
+[2023-11-25T05:40:40.410+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73788 do mês 2 extraída!
+[2023-11-25T05:40:40.417+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73788 do mês 2 adicionado!
+[2023-11-25T05:40:42.519+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73801 do mês 2 extraída!
+[2023-11-25T05:40:42.522+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73801 do mês 2 adicionado!
+[2023-11-25T05:40:44.572+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73806 do mês 2 extraída!
+[2023-11-25T05:40:44.574+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73806 do mês 2 adicionado!
+[2023-11-25T05:40:46.609+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141391 do mês 2 extraída!
+[2023-11-25T05:40:46.613+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141391 do mês 2 adicionado!
+[2023-11-25T05:40:48.764+0000] {logging_mixin.py:154} INFO - Despesas do deputado 73808 do mês 2 extraída!
+[2023-11-25T05:40:48.769+0000] {logging_mixin.py:154} INFO - Lote de despesas de 73808 do mês 2 adicionado!
+[2023-11-25T05:40:50.866+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141398 do mês 2 extraída!
+[2023-11-25T05:40:50.869+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141398 do mês 2 adicionado!
+[2023-11-25T05:40:52.977+0000] {logging_mixin.py:154} INFO - Despesas do deputado 122974 do mês 2 extraída!
+[2023-11-25T05:40:52.982+0000] {logging_mixin.py:154} INFO - Lote de despesas de 122974 do mês 2 adicionado!
+[2023-11-25T05:40:55.034+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141408 do mês 2 extraída!
+[2023-11-25T05:40:55.038+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141408 do mês 2 adicionado!
+[2023-11-25T05:40:57.076+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141411 do mês 2 extraída!
+[2023-11-25T05:40:57.079+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141411 do mês 2 adicionado!
+[2023-11-25T05:40:59.135+0000] {logging_mixin.py:154} INFO - Despesas do deputado 104552 do mês 2 extraída!
+[2023-11-25T05:40:59.139+0000] {logging_mixin.py:154} INFO - Lote de despesas de 104552 do mês 2 adicionado!
+[2023-11-25T05:41:01.166+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225386 do mês 2 extraída!
+[2023-11-25T05:41:01.171+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225386 do mês 2 adicionado!
+[2023-11-25T05:41:03.293+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141421 do mês 2 extraída!
+[2023-11-25T05:41:03.300+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141421 do mês 2 adicionado!
+[2023-11-25T05:41:05.338+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141431 do mês 2 extraída!
+[2023-11-25T05:41:05.341+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141431 do mês 2 adicionado!
+[2023-11-25T05:41:07.399+0000] {logging_mixin.py:154} INFO - Despesas do deputado 198783 do mês 2 extraída!
+[2023-11-25T05:41:07.403+0000] {logging_mixin.py:154} INFO - Lote de despesas de 198783 do mês 2 adicionado!
+[2023-11-25T05:41:09.509+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141450 do mês 2 extraída!
+[2023-11-25T05:41:09.514+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141450 do mês 2 adicionado!
+[2023-11-25T05:41:11.566+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221328 do mês 2 extraída!
+[2023-11-25T05:41:11.569+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221328 do mês 2 adicionado!
+[2023-11-25T05:41:13.615+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141456 do mês 2 extraída!
+[2023-11-25T05:41:13.618+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141456 do mês 2 adicionado!
+[2023-11-25T05:41:15.675+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141458 do mês 2 extraída!
+[2023-11-25T05:41:15.678+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141458 do mês 2 adicionado!
+[2023-11-25T05:41:17.697+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141459 do mês 2 extraída!
+[2023-11-25T05:41:17.700+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141459 do mês 2 adicionado!
+[2023-11-25T05:41:19.758+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221329 do mês 2 extraída!
+[2023-11-25T05:41:19.765+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221329 do mês 2 adicionado!
+[2023-11-25T05:41:21.850+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141464 do mês 2 extraída!
+[2023-11-25T05:41:21.855+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141464 do mês 2 adicionado!
+[2023-11-25T05:41:24.155+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221338 do mês 2 extraída!
+[2023-11-25T05:41:24.158+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221338 do mês 2 adicionado!
+[2023-11-25T05:41:26.175+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221339 do mês 2 extraída!
+[2023-11-25T05:41:26.180+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221339 do mês 2 adicionado!
+[2023-11-25T05:41:28.218+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141470 do mês 2 extraída!
+[2023-11-25T05:41:28.221+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141470 do mês 2 adicionado!
+[2023-11-25T05:41:30.273+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141480 do mês 2 extraída!
+[2023-11-25T05:41:30.277+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141480 do mês 2 adicionado!
+[2023-11-25T05:41:32.369+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141485 do mês 2 extraída!
+[2023-11-25T05:41:32.373+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141485 do mês 2 adicionado!
+[2023-11-25T05:41:34.472+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141487 do mês 2 extraída!
+[2023-11-25T05:41:34.476+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141487 do mês 2 adicionado!
+[2023-11-25T05:41:36.558+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141488 do mês 2 extraída!
+[2023-11-25T05:41:36.564+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141488 do mês 2 adicionado!
+[2023-11-25T05:41:38.967+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92346 do mês 2 extraída!
+[2023-11-25T05:41:38.969+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92346 do mês 2 adicionado!
+[2023-11-25T05:41:41.066+0000] {logging_mixin.py:154} INFO - Despesas do deputado 88256 do mês 2 extraída!
+[2023-11-25T05:41:41.080+0000] {logging_mixin.py:154} INFO - Lote de despesas de 88256 do mês 2 adicionado!
+[2023-11-25T05:41:43.193+0000] {logging_mixin.py:154} INFO - Despesas do deputado 221378 do mês 2 extraída!
+[2023-11-25T05:41:43.197+0000] {logging_mixin.py:154} INFO - Lote de despesas de 221378 do mês 2 adicionado!
+[2023-11-25T05:41:45.253+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141516 do mês 2 extraída!
+[2023-11-25T05:41:45.266+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141516 do mês 2 adicionado!
+[2023-11-25T05:41:47.487+0000] {logging_mixin.py:154} INFO - Despesas do deputado 123086 do mês 2 extraída!
+[2023-11-25T05:41:47.496+0000] {logging_mixin.py:154} INFO - Lote de despesas de 123086 do mês 2 adicionado!
+[2023-11-25T05:41:49.602+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141531 do mês 2 extraída!
+[2023-11-25T05:41:49.609+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141531 do mês 2 adicionado!
+[2023-11-25T05:41:51.668+0000] {logging_mixin.py:154} INFO - Despesas do deputado 69871 do mês 2 extraída!
+[2023-11-25T05:41:51.671+0000] {logging_mixin.py:154} INFO - Lote de despesas de 69871 do mês 2 adicionado!
+[2023-11-25T05:41:53.793+0000] {logging_mixin.py:154} INFO - Despesas do deputado 141555 do mês 2 extraída!
+[2023-11-25T05:41:53.806+0000] {logging_mixin.py:154} INFO - Lote de despesas de 141555 do mês 2 adicionado!
+[2023-11-25T05:41:55.956+0000] {logging_mixin.py:154} INFO - Despesas do deputado 143632 do mês 2 extraída!
+[2023-11-25T05:41:55.963+0000] {logging_mixin.py:154} INFO - Lote de despesas de 143632 do mês 2 adicionado!
+[2023-11-25T05:41:58.167+0000] {logging_mixin.py:154} INFO - Despesas do deputado 162067 do mês 2 extraída!
+[2023-11-25T05:41:58.178+0000] {logging_mixin.py:154} INFO - Lote de despesas de 162067 do mês 2 adicionado!
+[2023-11-25T05:42:00.508+0000] {logging_mixin.py:154} INFO - Despesas do deputado 213274 do mês 2 extraída!
+[2023-11-25T05:42:00.517+0000] {logging_mixin.py:154} INFO - Lote de despesas de 213274 do mês 2 adicionado!
+[2023-11-25T05:42:03.044+0000] {logging_mixin.py:154} INFO - Despesas do deputado 209189 do mês 2 extraída!
+[2023-11-25T05:42:03.056+0000] {logging_mixin.py:154} INFO - Lote de despesas de 209189 do mês 2 adicionado!
+[2023-11-25T05:42:05.096+0000] {logging_mixin.py:154} INFO - Despesas do deputado 98615 do mês 2 extraída!
+[2023-11-25T05:42:05.108+0000] {logging_mixin.py:154} INFO - Lote de despesas de 98615 do mês 2 adicionado!
+[2023-11-25T05:42:07.288+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74041 do mês 2 extraída!
+[2023-11-25T05:42:07.293+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74041 do mês 2 adicionado!
+[2023-11-25T05:42:09.419+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74043 do mês 2 extraída!
+[2023-11-25T05:42:09.427+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74043 do mês 2 adicionado!
+[2023-11-25T05:42:11.748+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74044 do mês 2 extraída!
+[2023-11-25T05:42:11.757+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74044 do mês 2 adicionado!
+[2023-11-25T05:42:13.866+0000] {logging_mixin.py:154} INFO - Despesas do deputado 133439 do mês 2 extraída!
+[2023-11-25T05:42:13.872+0000] {logging_mixin.py:154} INFO - Lote de despesas de 133439 do mês 2 adicionado!
+[2023-11-25T05:42:15.966+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74057 do mês 2 extraída!
+[2023-11-25T05:42:15.975+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74057 do mês 2 adicionado!
+[2023-11-25T05:42:18.025+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74060 do mês 2 extraída!
+[2023-11-25T05:42:18.028+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74060 do mês 2 adicionado!
+[2023-11-25T05:42:20.244+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74075 do mês 2 extraída!
+[2023-11-25T05:42:20.247+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74075 do mês 2 adicionado!
+[2023-11-25T05:42:22.264+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74079 do mês 2 extraída!
+[2023-11-25T05:42:22.266+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74079 do mês 2 adicionado!
+[2023-11-25T05:42:24.389+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74084 do mês 2 extraída!
+[2023-11-25T05:42:24.396+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74084 do mês 2 adicionado!
+[2023-11-25T05:42:26.526+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74090 do mês 2 extraída!
+[2023-11-25T05:42:26.531+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74090 do mês 2 adicionado!
+[2023-11-25T05:42:28.580+0000] {logging_mixin.py:154} INFO - Despesas do deputado 217480 do mês 2 extraída!
+[2023-11-25T05:42:28.586+0000] {logging_mixin.py:154} INFO - Lote de despesas de 217480 do mês 2 adicionado!
+[2023-11-25T05:42:30.700+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74141 do mês 2 extraída!
+[2023-11-25T05:42:30.704+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74141 do mês 2 adicionado!
+[2023-11-25T05:42:32.726+0000] {logging_mixin.py:154} INFO - Despesas do deputado 160161 do mês 2 extraída!
+[2023-11-25T05:42:32.731+0000] {logging_mixin.py:154} INFO - Lote de despesas de 160161 do mês 2 adicionado!
+[2023-11-25T05:42:34.766+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74156 do mês 2 extraída!
+[2023-11-25T05:42:34.771+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74156 do mês 2 adicionado!
+[2023-11-25T05:42:36.807+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74158 do mês 2 extraída!
+[2023-11-25T05:42:36.811+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74158 do mês 2 adicionado!
+[2023-11-25T05:42:38.899+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74159 do mês 2 extraída!
+[2023-11-25T05:42:38.903+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74159 do mês 2 adicionado!
+[2023-11-25T05:42:41.050+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74160 do mês 2 extraída!
+[2023-11-25T05:42:41.054+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74160 do mês 2 adicionado!
+[2023-11-25T05:42:43.091+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74161 do mês 2 extraída!
+[2023-11-25T05:42:43.097+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74161 do mês 2 adicionado!
+[2023-11-25T05:42:45.183+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74171 do mês 2 extraída!
+[2023-11-25T05:42:45.190+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74171 do mês 2 adicionado!
+[2023-11-25T05:42:47.263+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225727 do mês 2 extraída!
+[2023-11-25T05:42:47.269+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225727 do mês 2 adicionado!
+[2023-11-25T05:42:49.337+0000] {logging_mixin.py:154} INFO - Despesas do deputado 219585 do mês 2 extraída!
+[2023-11-25T05:42:49.341+0000] {logging_mixin.py:154} INFO - Lote de despesas de 219585 do mês 2 adicionado!
+[2023-11-25T05:42:51.430+0000] {logging_mixin.py:154} INFO - Despesas do deputado 225730 do mês 2 extraída!
+[2023-11-25T05:42:51.434+0000] {logging_mixin.py:154} INFO - Lote de despesas de 225730 do mês 2 adicionado!
+[2023-11-25T05:42:53.543+0000] {logging_mixin.py:154} INFO - Despesas do deputado 163321 do mês 2 extraída!
+[2023-11-25T05:42:53.549+0000] {logging_mixin.py:154} INFO - Lote de despesas de 163321 do mês 2 adicionado!
+[2023-11-25T05:42:55.571+0000] {logging_mixin.py:154} INFO - Despesas do deputado 166402 do mês 2 extraída!
+[2023-11-25T05:42:55.576+0000] {logging_mixin.py:154} INFO - Lote de despesas de 166402 do mês 2 adicionado!
+[2023-11-25T05:42:57.626+0000] {logging_mixin.py:154} INFO - Despesas do deputado 164360 do mês 2 extraída!
+[2023-11-25T05:42:57.635+0000] {logging_mixin.py:154} INFO - Lote de despesas de 164360 do mês 2 adicionado!
+[2023-11-25T05:42:59.686+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74253 do mês 2 extraída!
+[2023-11-25T05:42:59.691+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74253 do mês 2 adicionado!
+[2023-11-25T05:43:01.778+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74262 do mês 2 extraída!
+[2023-11-25T05:43:01.781+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74262 do mês 2 adicionado!
+[2023-11-25T05:43:03.803+0000] {logging_mixin.py:154} INFO - Despesas do deputado 226837 do mês 2 extraída!
+[2023-11-25T05:43:03.807+0000] {logging_mixin.py:154} INFO - Lote de despesas de 226837 do mês 2 adicionado!
+[2023-11-25T05:43:06.308+0000] {logging_mixin.py:154} INFO - Despesas do deputado 92699 do mês 2 extraída!
+[2023-11-25T05:43:06.312+0000] {logging_mixin.py:154} INFO - Lote de despesas de 92699 do mês 2 adicionado!
+[2023-11-25T05:43:08.482+0000] {logging_mixin.py:154} INFO - Despesas do deputado 162332 do mês 2 extraída!
+[2023-11-25T05:43:08.488+0000] {logging_mixin.py:154} INFO - Lote de despesas de 162332 do mês 2 adicionado!
+[2023-11-25T05:43:10.742+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74270 do mês 2 extraída!
+[2023-11-25T05:43:10.746+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74270 do mês 2 adicionado!
+[2023-11-25T05:43:13.217+0000] {logging_mixin.py:154} INFO - Despesas do deputado 74356 do mês 2 extraída!
+[2023-11-25T05:43:13.227+0000] {logging_mixin.py:154} INFO - Lote de despesas de 74356 do mês 2 adicionado!
+[2023-11-25T05:43:26.221+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9884120640>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:44:05.413+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f98841203d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:43:47.437+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-11-25T05:44:24.600+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-11-25T05:44:50.158+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9884120be0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:45:39.049+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9884120b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:45:07.109+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-11-25T05:46:00.318+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9884120ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:46:01.506+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-11-25T05:47:07.063+0000] {logging_mixin.py:154} INFO - Erro ao requisitar as despesas do deputado 156190 para 2023/2: HTTPSConnectionPool(host='dadosabertos.camara.leg.br', port=443): Max retries exceeded with url: /api/v2/deputados/156190/despesas?ano=2023&mes=2&itens=80&ordem=ASC&ordenarPor=ano (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9884120640>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-25T05:46:17.213+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

@@ -1,0 +1,5 @@
+pandas
+polars
+pyscopg2
+requests
+SQLAlchemy
